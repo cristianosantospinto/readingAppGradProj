@@ -9,11 +9,13 @@
 import SpriteKit
 
 class BeachScene1: SKScene {
+    
     override func didMoveToView(view: SKView) {
+        
         let background = SKSpriteNode(imageNamed: "scene1")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
     }
-    //
+
 }
 
