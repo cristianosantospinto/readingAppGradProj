@@ -19,7 +19,7 @@ class MainMenu: SKScene {
     func sceneTapped() {
         let myScene = GameScene(size:self.size)
         myScene.scaleMode = scaleMode
-        let reveal = SKTransition.doorwayWithDuration(1.5)
+        let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0)
         self.view?.presentScene(myScene, transition: reveal)
 
     }
