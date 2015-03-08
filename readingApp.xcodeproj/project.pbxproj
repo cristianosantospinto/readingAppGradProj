@@ -17,6 +17,9 @@
 		8856D3981AAB8F0800D92C79 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3971AAB8F0800D92C79 /* MainMenu.swift */; };
 		8856D39C1AAB8F5B00D92C79 /* mainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856D39A1AAB8F5B00D92C79 /* mainMenu.png */; };
 		8856D39D1AAB8F5B00D92C79 /* scene1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856D39B1AAB8F5B00D92C79 /* scene1.png */; };
+		8871F0091AAC41DA0065880F /* scene2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8871F0081AAC41DA0065880F /* scene2.png */; };
+		8871F00B1AAC47490065880F /* gameScene.png in Resources */ = {isa = PBXBuildFile; fileRef = 8871F00A1AAC47490065880F /* gameScene.png */; };
+		8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871F00F1AAC497E0065880F /* BeachScene1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		8856D3971AAB8F0800D92C79 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		8856D39A1AAB8F5B00D92C79 /* mainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainMenu.png; sourceTree = "<group>"; };
 		8856D39B1AAB8F5B00D92C79 /* scene1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene1.png; sourceTree = "<group>"; };
+		8871F0081AAC41DA0065880F /* scene2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene2.png; sourceTree = "<group>"; };
+		8871F00A1AAC47490065880F /* gameScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameScene.png; sourceTree = "<group>"; };
+		8871F00F1AAC497E0065880F /* BeachScene1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeachScene1.swift; path = ../BeachScene1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				8856D3731AAB8EAF00D92C79 /* AppDelegate.swift */,
-				8856D3771AAB8EAF00D92C79 /* GameScene.swift */,
 				8856D3791AAB8EAF00D92C79 /* GameViewController.swift */,
-				8856D3971AAB8F0800D92C79 /* MainMenu.swift */,
-				8856D37B1AAB8EAF00D92C79 /* Main.storyboard */,
+				8871F00E1AAC48500065880F /* scenes */,
 				8871F0071AAC40D80065880F /* images */,
 				8856D37E1AAB8EAF00D92C79 /* Images.xcassets */,
+				8856D37B1AAB8EAF00D92C79 /* Main.storyboard */,
 				8856D3801AAB8EAF00D92C79 /* LaunchScreen.xib */,
 				8856D3711AAB8EAF00D92C79 /* Supporting Files */,
 			);
@@ -126,10 +131,22 @@
 		8871F0071AAC40D80065880F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8871F00A1AAC47490065880F /* gameScene.png */,
+				8871F0081AAC41DA0065880F /* scene2.png */,
 				8856D39A1AAB8F5B00D92C79 /* mainMenu.png */,
 				8856D39B1AAB8F5B00D92C79 /* scene1.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		8871F00E1AAC48500065880F /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8871F00F1AAC497E0065880F /* BeachScene1.swift */,
+				8856D3771AAB8EAF00D92C79 /* GameScene.swift */,
+				8856D3971AAB8F0800D92C79 /* MainMenu.swift */,
+			);
+			name = scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +233,9 @@
 				8856D39C1AAB8F5B00D92C79 /* mainMenu.png in Resources */,
 				8856D39D1AAB8F5B00D92C79 /* scene1.png in Resources */,
 				8856D37F1AAB8EAF00D92C79 /* Images.xcassets in Resources */,
+				8871F00B1AAC47490065880F /* gameScene.png in Resources */,
 				8856D37D1AAB8EAF00D92C79 /* Main.storyboard in Resources */,
+				8871F0091AAC41DA0065880F /* scene2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */,
 				8856D3781AAB8EAF00D92C79 /* GameScene.swift in Sources */,
 				8856D37A1AAB8EAF00D92C79 /* GameViewController.swift in Sources */,
 				8856D3741AAB8EAF00D92C79 /* AppDelegate.swift in Sources */,

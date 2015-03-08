@@ -14,4 +14,21 @@ class MainMenu: SKScene {
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
     }
+    
+    
+    func sceneTapped() {
+        let myScene = GameScene(size:self.size)
+        myScene.scaleMode = scaleMode
+        let reveal = SKTransition.doorwayWithDuration(1.5)
+        self.view?.presentScene(myScene, transition: reveal)
+
+    }
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        sceneTapped()
+    }
+    
+    
 }
+
+   
