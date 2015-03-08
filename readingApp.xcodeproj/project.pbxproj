@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8856D3741AAB8EAF00D92C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3731AAB8EAF00D92C79 /* AppDelegate.swift */; };
-		8856D3761AAB8EAF00D92C79 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8856D3751AAB8EAF00D92C79 /* GameScene.sks */; };
 		8856D3781AAB8EAF00D92C79 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3771AAB8EAF00D92C79 /* GameScene.swift */; };
 		8856D37A1AAB8EAF00D92C79 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3791AAB8EAF00D92C79 /* GameViewController.swift */; };
 		8856D37D1AAB8EAF00D92C79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8856D37B1AAB8EAF00D92C79 /* Main.storyboard */; };
 		8856D37F1AAB8EAF00D92C79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8856D37E1AAB8EAF00D92C79 /* Images.xcassets */; };
 		8856D3821AAB8EAF00D92C79 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8856D3801AAB8EAF00D92C79 /* LaunchScreen.xib */; };
 		8856D38E1AAB8EAF00D92C79 /* readingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D38D1AAB8EAF00D92C79 /* readingAppTests.swift */; };
+		8856D3981AAB8F0800D92C79 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3971AAB8F0800D92C79 /* MainMenu.swift */; };
+		8856D39C1AAB8F5B00D92C79 /* mainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856D39A1AAB8F5B00D92C79 /* mainMenu.png */; };
+		8856D39D1AAB8F5B00D92C79 /* scene1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856D39B1AAB8F5B00D92C79 /* scene1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,6 @@
 		8856D36E1AAB8EAF00D92C79 /* readingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = readingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8856D3721AAB8EAF00D92C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8856D3731AAB8EAF00D92C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8856D3751AAB8EAF00D92C79 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		8856D3771AAB8EAF00D92C79 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		8856D3791AAB8EAF00D92C79 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8856D37C1AAB8EAF00D92C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +41,9 @@
 		8856D3871AAB8EAF00D92C79 /* readingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = readingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8856D38C1AAB8EAF00D92C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8856D38D1AAB8EAF00D92C79 /* readingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readingAppTests.swift; sourceTree = "<group>"; };
+		8856D3971AAB8F0800D92C79 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		8856D39A1AAB8F5B00D92C79 /* mainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainMenu.png; sourceTree = "<group>"; };
+		8856D39B1AAB8F5B00D92C79 /* scene1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				8856D3731AAB8EAF00D92C79 /* AppDelegate.swift */,
-				8856D3751AAB8EAF00D92C79 /* GameScene.sks */,
 				8856D3771AAB8EAF00D92C79 /* GameScene.swift */,
 				8856D3791AAB8EAF00D92C79 /* GameViewController.swift */,
+				8856D3971AAB8F0800D92C79 /* MainMenu.swift */,
 				8856D37B1AAB8EAF00D92C79 /* Main.storyboard */,
+				8871F0071AAC40D80065880F /* images */,
 				8856D37E1AAB8EAF00D92C79 /* Images.xcassets */,
 				8856D3801AAB8EAF00D92C79 /* LaunchScreen.xib */,
 				8856D3711AAB8EAF00D92C79 /* Supporting Files */,
@@ -116,6 +121,15 @@
 				8856D38C1AAB8EAF00D92C79 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8871F0071AAC40D80065880F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8856D39A1AAB8F5B00D92C79 /* mainMenu.png */,
+				8856D39B1AAB8F5B00D92C79 /* scene1.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +213,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8856D3821AAB8EAF00D92C79 /* LaunchScreen.xib in Resources */,
+				8856D39C1AAB8F5B00D92C79 /* mainMenu.png in Resources */,
+				8856D39D1AAB8F5B00D92C79 /* scene1.png in Resources */,
 				8856D37F1AAB8EAF00D92C79 /* Images.xcassets in Resources */,
-				8856D3761AAB8EAF00D92C79 /* GameScene.sks in Resources */,
 				8856D37D1AAB8EAF00D92C79 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +237,7 @@
 				8856D3781AAB8EAF00D92C79 /* GameScene.swift in Sources */,
 				8856D37A1AAB8EAF00D92C79 /* GameViewController.swift in Sources */,
 				8856D3741AAB8EAF00D92C79 /* AppDelegate.swift in Sources */,
+				8856D3981AAB8F0800D92C79 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +431,7 @@
 				8856D3931AAB8EAF00D92C79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8856D3941AAB8EAF00D92C79 /* Build configuration list for PBXNativeTarget "readingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +440,7 @@
 				8856D3961AAB8EAF00D92C79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
