@@ -20,6 +20,7 @@
 		8871F0091AAC41DA0065880F /* scene2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8871F0081AAC41DA0065880F /* scene2.png */; };
 		8871F00B1AAC47490065880F /* gameScene.png in Resources */ = {isa = PBXBuildFile; fileRef = 8871F00A1AAC47490065880F /* gameScene.png */; };
 		8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871F00F1AAC497E0065880F /* BeachScene1.swift */; };
+		88D5ED2B1AADB0D9008C88F1 /* BookObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		8871F0081AAC41DA0065880F /* scene2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene2.png; sourceTree = "<group>"; };
 		8871F00A1AAC47490065880F /* gameScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameScene.png; sourceTree = "<group>"; };
 		8871F00F1AAC497E0065880F /* BeachScene1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeachScene1.swift; path = ../BeachScene1.swift; sourceTree = "<group>"; };
+		88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				8856D3731AAB8EAF00D92C79 /* AppDelegate.swift */,
 				8856D3791AAB8EAF00D92C79 /* GameViewController.swift */,
+				88D5ED2C1AADB14C008C88F1 /* Menu Objects */,
 				8871F00E1AAC48500065880F /* scenes */,
 				8871F0071AAC40D80065880F /* images */,
 				8856D37E1AAB8EAF00D92C79 /* Images.xcassets */,
@@ -147,6 +150,14 @@
 				8856D3971AAB8F0800D92C79 /* MainMenu.swift */,
 			);
 			name = scenes;
+			sourceTree = "<group>";
+		};
+		88D5ED2C1AADB14C008C88F1 /* Menu Objects */ = {
+			isa = PBXGroup;
+			children = (
+				88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */,
+			);
+			name = "Menu Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 				8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */,
 				8856D3781AAB8EAF00D92C79 /* GameScene.swift in Sources */,
 				8856D37A1AAB8EAF00D92C79 /* GameViewController.swift in Sources */,
+				88D5ED2B1AADB0D9008C88F1 /* BookObject.swift in Sources */,
 				8856D3741AAB8EAF00D92C79 /* AppDelegate.swift in Sources */,
 				8856D3981AAB8F0800D92C79 /* MainMenu.swift in Sources */,
 			);

@@ -21,7 +21,6 @@ class MainMenu: SKScene {
         myScene.scaleMode = scaleMode
         let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0)
         self.view?.presentScene(myScene, transition: reveal)
-
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {

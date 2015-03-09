@@ -14,6 +14,34 @@ class GameScene: SKScene {          //scene setup
         let background = SKSpriteNode(imageNamed: "gameScene") //grab image 'scene1'
         background.position = CGPoint(x: size.width/2, y: size.height/2)  //centralise image
         addChild(background)                                            //display image
+    
+        let bookOne = BookObject()
+        bookOne.position = CGPoint(x: size.width/2, y: size.height/2)
+        bookOne.bookName = "Book One"
+        bookOne.delegate = self
+        addChild(bookOne)
+        
+        let bookTwo = BookObject()
+        bookTwo.position = CGPoint(x: size.width/2 + 150, y: size.height/2)
+        bookTwo.bookName = "Book Two"
+        bookTwo.delegate = self
+        addChild(bookTwo)
     }
+    
+    
+    
+}
+
+extension GameScene: BookObjectDelegate {                           //good practice to put delegates at bottom
+    
+    func bookTouched() {
+        //make something interesting happen when touched (particle)
+        
+    }
+    
+    func transionToBook(bookName: String) {
+        println(bookName)
+    }
+    
 }
 
