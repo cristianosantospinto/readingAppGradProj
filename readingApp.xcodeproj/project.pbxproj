@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884713C21AAEDDF000B3BD23 /* beachBook.png in Resources */ = {isa = PBXBuildFile; fileRef = 884713C11AAEDDF000B3BD23 /* beachBook.png */; };
+		884713C41AAEF57C00B3BD23 /* bookTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 884713C31AAEF57C00B3BD23 /* bookTwo.png */; };
 		884E73851AAC6777009A2FDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884E73841AAC6777009A2FDB /* LaunchScreen.xib */; };
 		8856D3741AAB8EAF00D92C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3731AAB8EAF00D92C79 /* AppDelegate.swift */; };
 		8856D3781AAB8EAF00D92C79 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3771AAB8EAF00D92C79 /* GameScene.swift */; };
 		8856D37A1AAB8EAF00D92C79 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3791AAB8EAF00D92C79 /* GameViewController.swift */; };
 		8856D37D1AAB8EAF00D92C79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8856D37B1AAB8EAF00D92C79 /* Main.storyboard */; };
-		8856D37F1AAB8EAF00D92C79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8856D37E1AAB8EAF00D92C79 /* Images.xcassets */; };
 		8856D38E1AAB8EAF00D92C79 /* readingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D38D1AAB8EAF00D92C79 /* readingAppTests.swift */; };
 		8856D3981AAB8F0800D92C79 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3971AAB8F0800D92C79 /* MainMenu.swift */; };
 		8856D39C1AAB8F5B00D92C79 /* mainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856D39A1AAB8F5B00D92C79 /* mainMenu.png */; };
 		8856D39D1AAB8F5B00D92C79 /* scene1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856D39B1AAB8F5B00D92C79 /* scene1.png */; };
 		8871F0091AAC41DA0065880F /* scene2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8871F0081AAC41DA0065880F /* scene2.png */; };
-		8871F00B1AAC47490065880F /* gameScene.png in Resources */ = {isa = PBXBuildFile; fileRef = 8871F00A1AAC47490065880F /* gameScene.png */; };
 		8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871F00F1AAC497E0065880F /* BeachScene1.swift */; };
 		88D5ED2B1AADB0D9008C88F1 /* BookObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		884713C11AAEDDF000B3BD23 /* beachBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beachBook.png; sourceTree = "<group>"; };
+		884713C31AAEF57C00B3BD23 /* bookTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookTwo.png; sourceTree = "<group>"; };
 		884E73841AAC6777009A2FDB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8856D36E1AAB8EAF00D92C79 /* readingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = readingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8856D3721AAB8EAF00D92C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,7 +43,6 @@
 		8856D3771AAB8EAF00D92C79 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		8856D3791AAB8EAF00D92C79 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8856D37C1AAB8EAF00D92C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8856D37E1AAB8EAF00D92C79 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8856D3871AAB8EAF00D92C79 /* readingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = readingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8856D38C1AAB8EAF00D92C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8856D38D1AAB8EAF00D92C79 /* readingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readingAppTests.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		8856D39A1AAB8F5B00D92C79 /* mainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainMenu.png; sourceTree = "<group>"; };
 		8856D39B1AAB8F5B00D92C79 /* scene1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene1.png; sourceTree = "<group>"; };
 		8871F0081AAC41DA0065880F /* scene2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene2.png; sourceTree = "<group>"; };
-		8871F00A1AAC47490065880F /* gameScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameScene.png; sourceTree = "<group>"; };
 		8871F00F1AAC497E0065880F /* BeachScene1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeachScene1.swift; path = ../BeachScene1.swift; sourceTree = "<group>"; };
 		88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +98,6 @@
 				88D5ED2C1AADB14C008C88F1 /* Menu Objects */,
 				8871F00E1AAC48500065880F /* scenes */,
 				8871F0071AAC40D80065880F /* images */,
-				8856D37E1AAB8EAF00D92C79 /* Images.xcassets */,
 				8856D37B1AAB8EAF00D92C79 /* Main.storyboard */,
 				884E73841AAC6777009A2FDB /* LaunchScreen.xib */,
 				8856D3711AAB8EAF00D92C79 /* Supporting Files */,
@@ -134,7 +133,8 @@
 		8871F0071AAC40D80065880F /* images */ = {
 			isa = PBXGroup;
 			children = (
-				8871F00A1AAC47490065880F /* gameScene.png */,
+				884713C31AAEF57C00B3BD23 /* bookTwo.png */,
+				884713C11AAEDDF000B3BD23 /* beachBook.png */,
 				8871F0081AAC41DA0065880F /* scene2.png */,
 				8856D39A1AAB8F5B00D92C79 /* mainMenu.png */,
 				8856D39B1AAB8F5B00D92C79 /* scene1.png */,
@@ -242,9 +242,9 @@
 			files = (
 				8856D39C1AAB8F5B00D92C79 /* mainMenu.png in Resources */,
 				8856D39D1AAB8F5B00D92C79 /* scene1.png in Resources */,
-				8856D37F1AAB8EAF00D92C79 /* Images.xcassets in Resources */,
 				884E73851AAC6777009A2FDB /* LaunchScreen.xib in Resources */,
-				8871F00B1AAC47490065880F /* gameScene.png in Resources */,
+				884713C41AAEF57C00B3BD23 /* bookTwo.png in Resources */,
+				884713C21AAEDDF000B3BD23 /* beachBook.png in Resources */,
 				8856D37D1AAB8EAF00D92C79 /* Main.storyboard in Resources */,
 				8871F0091AAC41DA0065880F /* scene2.png in Resources */,
 			);

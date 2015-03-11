@@ -1,34 +1,41 @@
 import SpriteKit
 
 protocol BookObjectDelegate: class {
-    func transionToBook(bookName: String)
+    func transitionToBook(bookName: String)
     func bookTouched()
 }
 
 class BookObject: SKSpriteNode {
     
     var bookName: String?
-    weak var delegate: BookObjectDelegate?
+    weak var delegate: BookObjectDelegate?          //delegate protocol
     
-    override init(){
-        let texture = SKTexture(imageNamed: "80x80")                //texture essentially is just image (images have textures)
+
+    init(imageNamed: String, bookNamed: String){
+        
+        let texture = SKTexture(imageNamed: imageNamed)
         super.init(texture: texture, color: nil, size: texture.size())
         userInteractionEnabled = true
-    }
+        bookName = bookNamed
+   }
+    
 
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {              //
         delegate?.bookTouched()
     }
+    
+    
+
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         for touch in touches {
             let location = touch.locationInNode(scene)
-            let touchedNode = nodeAtPoint(location)
-            let distance = hypotf(Float(location.x - position.x), Float(location.y - position.y))
+            let touchedNode = nodeAtPoint(location)                                                 //drag/click?
+            let distance = hypotf(Float(location.x - position.x), Float(location.y - position.y)) //drag/click
             
             if let bookName = bookName {
-                if distance < 200 {                                 //if user presses/drags anywhere 200px away then cancel presss
-                   delegate?.transionToBook(bookName)
+                if distance < 200 {                                 //drag/click - if user presses/drags anywhere 200px away then cancel press
+                   delegate?.transitionToBook(bookName)
                 }
                 
             }
