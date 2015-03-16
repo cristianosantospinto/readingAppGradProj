@@ -19,13 +19,17 @@ class MainMenu: SKScene {
     func sceneTapped() {
         let myScene = GameScene(size:self.size)
         myScene.scaleMode = scaleMode
-        let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0)
+        let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
         self.view?.presentScene(myScene, transition: reveal)
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        sceneTapped()
+    
+    sceneTapped()
+    
     }
+    
+    // page 466 - set up then do an override func update and call 'sceneTapped'. Need to have the math etc. 
     
 
 }

@@ -12,7 +12,7 @@ class BeachScene1: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        let background = SKSpriteNode(imageNamed: "beach1")
+        let background = SKSpriteNode(imageNamed: "scene2")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
     }

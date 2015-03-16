@@ -1,7 +1,7 @@
 import SpriteKit
 
 protocol BookObjectDelegate: class {
-    func transitionToBook(bookName: String)
+    func transitionToBook(bookName: String)             //protocol
     func bookTouched()
 }
 
@@ -11,17 +11,18 @@ class BookObject: SKSpriteNode {
     weak var delegate: BookObjectDelegate?          //delegate protocol
     
 
-    init(imageNamed: String, bookNamed: String){
-        
+    init(imageNamed: String, bookNamed: String){  // custom initializer
         let texture = SKTexture(imageNamed: imageNamed)
         super.init(texture: texture, color: nil, size: texture.size())
         userInteractionEnabled = true
         bookName = bookNamed
+        
    }
     
 
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {              //
         delegate?.bookTouched()
+        
     }
     
     
