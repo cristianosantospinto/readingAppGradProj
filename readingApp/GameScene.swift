@@ -12,13 +12,7 @@ class GameScene: SKScene {          //scene setup
     override func didMoveToView(view: SKView) {
         backgroundColor = SKColor.lightGrayColor()
         
-        
-        //let background = SKSpriteNode(imageNamed: "gameScene") //grab image 'scene1'
-        //background.position = CGPoint(x: size.width/2, y: size.height/2)  //centralise image
-        //addChild(background)                                            //display image
-        
-        
-        let bookOne = BookObject(imageNamed: "beachBook", bookNamed: "bookOne")  //just call same name as image 'bookNamed...'
+        let bookOne = BookObject(imageNamed: "beachBook", bookNamed: "bookOne")       //cab change to same name as image 'bookNamed...'
         bookOne.position = CGPoint(x: size.width/2 - 500, y: size.height/2 + 300)
         bookOne.delegate = self
         addChild(bookOne)
@@ -53,46 +47,19 @@ class GameScene: SKScene {          //scene setup
     
 }
 
- //good practice to put delegates at bottom
 
-
-extension GameScene: BookObjectDelegate {       //extend bookObject?
-    
-    
-    /*override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        super.touchesBegan(touches, withEvent: event)
-
-
-            let location = touches.anyObject()?.locationInNode(self)
-            let touchedNode = self.nodeAtPoint(location!)
-        
-        if touchedNode == "bookOne" {
-            let transition = SKTransition.revealWithDirection(SKTransitionDirection.Down, duration: 0.5)
-            
-            let scene = BeachScene1(size:self.size)
-            scene.scaleMode = SKSceneScaleMode.AspectFill
-            
-            self.view?.presentScene(scene, transition: transition)
-            
-        }
-        
-    } */
+extension GameScene: BookObjectDelegate {       //extend bookObject?            //good practice to put delegates at bottom
 
     
-  func bookTouched() { // if/when 'bookOne is touched tranisiton scene to 'BeachScene1'
-    /*
-    let location = touch.locationInNode(self)
-    let touchedNode = self.nodeAtPoint(location)
+  func bookTouched() {
     
-  }
-
-*/
     }
+    
     func transitionToBook(bookName: String) {
         
         
         
-        if (bookName == "bookOne") {                        //switch statement
+        if (bookName == "bookOne") {
             println(bookName)
             let myScene = BeachScene1(size:self.size)
             myScene.scaleMode = scaleMode
@@ -140,14 +107,6 @@ extension GameScene: BookObjectDelegate {       //extend bookObject?
         }
     
     
-        /*
-        let transition = SKTransition.revealWithDirection(SKTransitionDirection.Down, duration: 0.5)
-        let scene = BeachScene1(size:self.size)
-        scene.scaleMode = SKSceneScaleMode.AspectFill
-        self.view?.presentScene(scene, transition: transition)
-        println(bookName)
     }
-*/
-}
 
 }

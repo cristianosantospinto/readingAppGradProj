@@ -9,29 +9,53 @@
 import SpriteKit
 
 class MainMenu: SKScene {
+    
+    var currentTime = 0.0
+    var startTime = 0.0
+    var elapsedTime = 0.0
+    
     override func didMoveToView(view: SKView) {
         let background = SKSpriteNode(imageNamed: "mainMenu")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
+        
     }
     
     
-    func sceneTapped() {
-        let myScene = GameScene(size:self.size)
-        myScene.scaleMode = scaleMode
-        let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
-        self.view?.presentScene(myScene, transition: reveal)
+    func sceneFade() {
+        let scene = GameScene(size:self.size)
+        scene.scaleMode = scaleMode
+        let reveal = SKTransition.fadeWithDuration(3.0)
+        self.view?.presentScene(scene, transition: reveal)
+        
+        startTime = currentTime
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    //override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
     
-    sceneTapped()
+   
+    
+    override func update(currentTime: CFTimeInterval) {
+        self.currentTime = currentTime
+        elapsedTime = currentTime - startTime
+       
+        
+        if elapsedTime >= 3.0 {
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 1))   //pause before fading
+            dispatch_after(delayTime, dispatch_get_main_queue()){
+            
+            self.sceneFade()
+        }
     
     }
-    
-    // page 466 - set up then do an override func update and call 'sceneTapped'. Need to have the math etc. 
     
 
 }
 
-   
+// func pauseForAMoment() {
+
+//sleep(3)
+
+//}
+
+}

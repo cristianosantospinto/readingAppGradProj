@@ -25,7 +25,6 @@ class BookObject: SKSpriteNode {
         
     }
     
-    
 
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
