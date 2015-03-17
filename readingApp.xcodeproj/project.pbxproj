@@ -17,7 +17,10 @@
 		8856D3981AAB8F0800D92C79 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3971AAB8F0800D92C79 /* MainMenu.swift */; };
 		8856D39C1AAB8F5B00D92C79 /* mainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856D39A1AAB8F5B00D92C79 /* mainMenu.png */; };
 		8856D39D1AAB8F5B00D92C79 /* scene1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856D39B1AAB8F5B00D92C79 /* scene1.png */; };
-		886A29661AB71C6F00630B3B /* scene3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A29651AB71C6F00630B3B /* scene3.swift */; };
+		886A29661AB71C6F00630B3B /* testScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A29651AB71C6F00630B3B /* testScene.swift */; };
+		886A29691AB82DA000630B3B /* mainMenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 886A29671AB82DA000630B3B /* mainMenuButton.png */; };
+		886A296A1AB82DA000630B3B /* nextPageButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 886A29681AB82DA000630B3B /* nextPageButton.png */; };
+		886A296C1AB82E5600630B3B /* BeachScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A296B1AB82E5600630B3B /* BeachScene2.swift */; };
 		8871F0091AAC41DA0065880F /* scene2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8871F0081AAC41DA0065880F /* scene2.png */; };
 		8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871F00F1AAC497E0065880F /* BeachScene1.swift */; };
 		88D379C31AB602DC0065EAA7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D379C21AB602DC0065EAA7 /* File.swift */; };
@@ -54,7 +57,10 @@
 		8856D3971AAB8F0800D92C79 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		8856D39A1AAB8F5B00D92C79 /* mainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainMenu.png; sourceTree = "<group>"; };
 		8856D39B1AAB8F5B00D92C79 /* scene1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene1.png; sourceTree = "<group>"; };
-		886A29651AB71C6F00630B3B /* scene3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scene3.swift; sourceTree = "<group>"; };
+		886A29651AB71C6F00630B3B /* testScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testScene.swift; sourceTree = "<group>"; };
+		886A29671AB82DA000630B3B /* mainMenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainMenuButton.png; sourceTree = "<group>"; };
+		886A29681AB82DA000630B3B /* nextPageButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextPageButton.png; sourceTree = "<group>"; };
+		886A296B1AB82E5600630B3B /* BeachScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeachScene2.swift; sourceTree = "<group>"; };
 		8871F0081AAC41DA0065880F /* scene2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene2.png; sourceTree = "<group>"; };
 		8871F00F1AAC497E0065880F /* BeachScene1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeachScene1.swift; path = ../BeachScene1.swift; sourceTree = "<group>"; };
 		88D379C21AB602DC0065EAA7 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
@@ -146,6 +152,8 @@
 		8871F0071AAC40D80065880F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				886A29671AB82DA000630B3B /* mainMenuButton.png */,
+				886A29681AB82DA000630B3B /* nextPageButton.png */,
 				88D379C41AB603010065EAA7 /* book2.png */,
 				88D379C51AB603010065EAA7 /* book3.png */,
 				88D379C61AB603010065EAA7 /* book4.png */,
@@ -162,8 +170,9 @@
 		8871F00E1AAC48500065880F /* scenes */ = {
 			isa = PBXGroup;
 			children = (
-				886A29651AB71C6F00630B3B /* scene3.swift */,
+				886A29651AB71C6F00630B3B /* testScene.swift */,
 				8871F00F1AAC497E0065880F /* BeachScene1.swift */,
+				886A296B1AB82E5600630B3B /* BeachScene2.swift */,
 				8856D3771AAB8EAF00D92C79 /* GameScene.swift */,
 				8856D3971AAB8F0800D92C79 /* MainMenu.swift */,
 			);
@@ -261,6 +270,8 @@
 				8856D39C1AAB8F5B00D92C79 /* mainMenu.png in Resources */,
 				88D379C91AB603010065EAA7 /* book2.png in Resources */,
 				88D379CA1AB603010065EAA7 /* book3.png in Resources */,
+				886A296A1AB82DA000630B3B /* nextPageButton.png in Resources */,
+				886A29691AB82DA000630B3B /* mainMenuButton.png in Resources */,
 				8856D39D1AAB8F5B00D92C79 /* scene1.png in Resources */,
 				884E73851AAC6777009A2FDB /* LaunchScreen.xib in Resources */,
 				88D379CD1AB603010065EAA7 /* book6.png in Resources */,
@@ -286,7 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				886A29661AB71C6F00630B3B /* scene3.swift in Sources */,
+				886A296C1AB82E5600630B3B /* BeachScene2.swift in Sources */,
+				886A29661AB71C6F00630B3B /* testScene.swift in Sources */,
 				8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */,
 				8856D3781AAB8EAF00D92C79 /* GameScene.swift in Sources */,
 				88D379C31AB602DC0065EAA7 /* File.swift in Sources */,

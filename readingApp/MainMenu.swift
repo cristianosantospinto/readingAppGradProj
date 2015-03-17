@@ -41,21 +41,16 @@ class MainMenu: SKScene {
        
         
         if elapsedTime >= 3.0 {
-            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 1))   //pause before fading
-            dispatch_after(delayTime, dispatch_get_main_queue()){
+            let pause = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 1))   //delay before fading
+            dispatch_after(pause, dispatch_get_main_queue()){
             
             self.sceneFade()
+            }
+    
         }
     
+
     }
-    
 
-}
-
-// func pauseForAMoment() {
-
-//sleep(3)
-
-//}
 
 }

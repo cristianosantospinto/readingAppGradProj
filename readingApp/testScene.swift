@@ -9,7 +9,7 @@
 
 import SpriteKit
 
-class scene3: SKScene {
+class testScene: SKScene {
     
     override func didMoveToView(view: SKView) {
         

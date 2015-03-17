@@ -68,35 +68,35 @@ extension GameScene: BookObjectDelegate {       //extend bookObject?            
             
         } else if (bookName == "bookTwo") {
             println(bookName)
-            let myScene = scene3(size:self.size)
+            let myScene = testScene(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
             self.view?.presentScene(myScene, transition: reveal)
         
         } else if (bookName == "bookThree") {
             println(bookName)
-            let myScene = scene3(size:self.size)
+            let myScene = testScene(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
             self.view?.presentScene(myScene, transition: reveal)
             
         } else if (bookName == "bookFour") {
             println(bookName)
-            let myScene = scene3(size:self.size)
+            let myScene = testScene(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
             self.view?.presentScene(myScene, transition: reveal)
             
         } else if (bookName == "bookFive") {
             println(bookName)
-            let myScene = scene3(size:self.size)
+            let myScene = testScene(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
             self.view?.presentScene(myScene, transition: reveal)
             
         } else if (bookName == "bookSix") {
             println(bookName)
-            let myScene = scene3(size:self.size)
+            let myScene = testScene(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
             self.view?.presentScene(myScene, transition: reveal)
