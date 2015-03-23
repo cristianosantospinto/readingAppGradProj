@@ -23,7 +23,6 @@
 		886A296C1AB82E5600630B3B /* BeachScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A296B1AB82E5600630B3B /* BeachScene2.swift */; };
 		8871F0091AAC41DA0065880F /* scene2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8871F0081AAC41DA0065880F /* scene2.png */; };
 		8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871F00F1AAC497E0065880F /* BeachScene1.swift */; };
-		88D379C31AB602DC0065EAA7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D379C21AB602DC0065EAA7 /* File.swift */; };
 		88D379C91AB603010065EAA7 /* book2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D379C41AB603010065EAA7 /* book2.png */; };
 		88D379CA1AB603010065EAA7 /* book3.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D379C51AB603010065EAA7 /* book3.png */; };
 		88D379CB1AB603010065EAA7 /* book4.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D379C61AB603010065EAA7 /* book4.png */; };
@@ -63,7 +62,6 @@
 		886A296B1AB82E5600630B3B /* BeachScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeachScene2.swift; sourceTree = "<group>"; };
 		8871F0081AAC41DA0065880F /* scene2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scene2.png; sourceTree = "<group>"; };
 		8871F00F1AAC497E0065880F /* BeachScene1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeachScene1.swift; path = ../BeachScene1.swift; sourceTree = "<group>"; };
-		88D379C21AB602DC0065EAA7 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		88D379C41AB603010065EAA7 /* book2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book2.png; sourceTree = "<group>"; };
 		88D379C51AB603010065EAA7 /* book3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book3.png; sourceTree = "<group>"; };
 		88D379C61AB603010065EAA7 /* book4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book4.png; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		8856D3651AAB8EAF00D92C79 = {
 			isa = PBXGroup;
 			children = (
-				88D379C21AB602DC0065EAA7 /* File.swift */,
 				8856D3701AAB8EAF00D92C79 /* readingApp */,
 				8856D38A1AAB8EAF00D92C79 /* readingAppTests */,
 				8856D36F1AAB8EAF00D92C79 /* Products */,
@@ -236,6 +233,7 @@
 				TargetAttributes = {
 					8856D36D1AAB8EAF00D92C79 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = PB5S47GH58;
 					};
 					8856D3861AAB8EAF00D92C79 = {
 						CreatedOnToolsVersion = 6.1;
@@ -301,7 +299,6 @@
 				886A29661AB71C6F00630B3B /* testScene.swift in Sources */,
 				8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */,
 				8856D3781AAB8EAF00D92C79 /* GameScene.swift in Sources */,
-				88D379C31AB602DC0065EAA7 /* File.swift in Sources */,
 				8856D37A1AAB8EAF00D92C79 /* GameViewController.swift in Sources */,
 				88D5ED2B1AADB0D9008C88F1 /* BookObject.swift in Sources */,
 				8856D3741AAB8EAF00D92C79 /* AppDelegate.swift in Sources */,
@@ -422,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = readingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = readingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

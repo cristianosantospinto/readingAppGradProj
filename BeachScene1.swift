@@ -14,31 +14,38 @@ class BeachScene1: SKScene {
         
         let background = SKSpriteNode(imageNamed: "scene1")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
-        var button = SKSpriteNode(imageNamed: "nextPageButton")
-        button.position = CGPoint(x: size.width/2 + 800, y: size.height/2 - 400)
-        button.name = "nextButton"
-        
         addChild(background)
-        addChild(button)
-    }
-    
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        var touch: UITouch = touches.anyObject() as UITouch
-        var location = touch.locationInNode(self)
-        var node = self.nodeAtPoint(location)
         
-        // If next button is touched, start transition to second scene
-        if (node.name == "nextButton") {
-            var secondScene = BeachScene2(size: self.size)
-            var transition = SKTransition.flipVerticalWithDuration(1.0)
-            secondScene.scaleMode = SKSceneScaleMode.AspectFill
-            self.scene!.view?.presentScene(secondScene, transition: transition)
-        }
-    }
-    
-    override func update(currentTime: CFTimeInterval) {
+        let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+        swipeRight.direction = .Right
+        view.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
+        swipeRight.direction = .Left
+        view.addGestureRecognizer(swipeLeft)
+        
         
     }
+    
+    func swipedRight(sender:UISwipeGestureRecognizer){
+        
+        let Scene = BeachScene2(size:self.size)
+        Scene.scaleMode = scaleMode
+        let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
+        self.view?.presentScene(Scene, transition: reveal)
+    }
+    
+    func swipedLeft(sender:UISwipeGestureRecognizer){
+        
+        let Scene = MainMenu(size:self.size)
+        Scene.scaleMode = scaleMode
+        let reveal = SKTransition.fadeWithDuration(1.0)
+        self.view?.presentScene(Scene, transition: reveal)
+    }
+    
+    
+    //println("swiped right")
+    
 }
 
 
