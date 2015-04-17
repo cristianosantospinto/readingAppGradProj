@@ -9,43 +9,66 @@
 import SpriteKit
 
 class GameScene: SKScene {          //scene setup
-    override func didMoveToView(view: SKView) {
-        backgroundColor = SKColor.lightGrayColor()
-        
-        let bookOne = BookObject(imageNamed: "beachBook", bookNamed: "bookOne")       //cab change to same name as image 'bookNamed...'
-        bookOne.position = CGPoint(x: size.width/2 - 500, y: size.height/2 + 300)
+  
+    let background1 = SKSpriteNode(imageNamed: "scrollingBg1")
+    let background2 = SKSpriteNode(imageNamed: "scrollingBg2")        //scrolling background setup images
+    
+override func didMoveToView(view: SKView) {
+    
+    background1.anchorPoint = CGPointZero                       //scrolling background positioning
+    background1.position = CGPoint(x: 0,y: 0)
+    //background1.zPosition = -15
+    self.addChild(background1)
+    
+    background2.anchorPoint = CGPointZero
+    background2.position = CGPoint(x: background1.size.width, y: 0)
+    //background2.zPosition = -15
+    self.addChild(background2)
+    
+    
+    
+        let bookOne = BookObject(imageNamed: "GustavoBook", bookNamed: "bookOne")       //can change to same name as image 'bookNamed...'
+        bookOne.position = CGPoint(x: size.width/2 - 350, y: size.height/2)
         bookOne.delegate = self
         addChild(bookOne)
         
-        let bookTwo = BookObject(imageNamed: "book2", bookNamed: "bookTwo")
-        bookTwo.position = CGPoint(x: size.width/2, y: size.height/2 + 300)
+        let bookTwo = BookObject(imageNamed: "MonkeyBook", bookNamed: "bookTwo")
+        bookTwo.position = CGPoint(x: size.width/2 + 350, y: size.height/2)
         bookTwo.delegate = self
         addChild(bookTwo)
-        
-        let bookThree = BookObject(imageNamed: "book3", bookNamed: "bookThree")
-        bookThree.position = CGPoint(x: size.width/2 + 500, y: size.height/2 + 300)
-        bookThree.delegate = self
-        addChild(bookThree)
-        
-        let bookFour = BookObject(imageNamed: "book4", bookNamed: "bookFour")
-        bookFour.position = CGPoint(x: size.width/2 - 500, y: size.height/2 - 200)
-        bookFour.delegate = self
-        addChild(bookFour)
-        
-        let bookFive = BookObject(imageNamed: "book5", bookNamed: "bookFive")
-        bookFive.position = CGPoint(x: size.width/2, y: size.height/2 - 200)
-        bookFive.delegate = self
-        addChild(bookFive)
-        
-        let bookSix = BookObject(imageNamed: "book6", bookNamed: "bookSix")
-        bookSix.position = CGPoint(x: size.width/2 + 500, y: size.height/2 - 200)
-        bookSix.delegate = self
-        addChild(bookSix)
-        
+
+                                                                            //books animation
+    
+    /*bookOne.physicsBody = SKPhysicsBody(rectangleOfSize: bookOne.size)
+    bookOne.physicsBody?.affectedByGravity = true
+    bookOne.physicsBody?.dynamic = true
+    let physicsBody = SKPhysicsBody (edgeLoopFromRect: self.frame)
+    self.physicsBody = physicsBody
+    bookOne.physicsBody?.restitution =  1
+    self.physicsWorld.gravity.dy = -1 */
+    
+    let rotateR = SKAction.rotateByAngle(0.1, duration: 1)
+    let rotateL = SKAction.rotateByAngle(-0.1, duration: 1)
+    let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+    let wiggle = SKAction.repeatActionForever(cycle)
+    bookOne.runAction(wiggle)
+    bookTwo.runAction(wiggle)
+    
+    let cloud1 = SKSpriteNode(imageNamed: "appCloud1")
+    cloud1.position = CGPoint(x: size.width/2 - 350, y: size.height/2 - 190)
+    addChild(cloud1)
+    
+    let cloud2 = SKSpriteNode(imageNamed: "appCloud2")
+    cloud2.position = CGPoint(x: size.width/2 + 350, y: size.height/2 - 190)
+    addChild(cloud2)
+    
+        }
+    
+    
+ 
     
     }
-    
-}
+
 
 
 extension GameScene: BookObjectDelegate {       //extend bookObject?            //good practice to put delegates at bottom
@@ -61,52 +84,48 @@ extension GameScene: BookObjectDelegate {       //extend bookObject?            
         
         if (bookName == "bookOne") {
             println(bookName)
-            let myScene = BeachScene1(size:self.size)
+            let myScene = Gustavo1(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
             self.view?.presentScene(myScene, transition: reveal)
             
         } else if (bookName == "bookTwo") {
             println(bookName)
-            let myScene = testScene(size:self.size)
+            let myScene = Monkey1(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
             self.view?.presentScene(myScene, transition: reveal)
         
-        } else if (bookName == "bookThree") {
+        /*} else if (bookName == "bookThree") {
             println(bookName)
             let myScene = testScene(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
             self.view?.presentScene(myScene, transition: reveal)
-            
-        } else if (bookName == "bookFour") {
-            println(bookName)
-            let myScene = testScene(size:self.size)
-            myScene.scaleMode = scaleMode
-            let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
-            self.view?.presentScene(myScene, transition: reveal)
-            
-        } else if (bookName == "bookFive") {
-            println(bookName)
-            let myScene = testScene(size:self.size)
-            myScene.scaleMode = scaleMode
-            let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
-            self.view?.presentScene(myScene, transition: reveal)
-            
-        } else if (bookName == "bookSix") {
-            println(bookName)
-            let myScene = testScene(size:self.size)
-            myScene.scaleMode = scaleMode
-            let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
-            self.view?.presentScene(myScene, transition: reveal)
-
-
-
+            */
     
+            
+        }
+        
         }
     
-    
+    override func update(currentTime: CFTimeInterval) {             //scrolling of background
+        
+        background1.position = CGPoint(x: background1.position.x - 2, y: background1.position.y)
+        background2.position = CGPoint(x: background2.position.x - 2 , y: background2.position.y)
+        
+        if(background1.position.x < -background1.size.width) //less than
+        {
+            background1.position = CGPoint(x: background2.position.x + background2.size.width, y: background1.position.y)
+        }
+        
+        if(background2.position.x < -background2.size.width)
+        {
+            background2.position = CGPoint(x: background1.position.x + background1.size.width, y: background2.position.y)
+            
+        }
+        
     }
+
 
 }

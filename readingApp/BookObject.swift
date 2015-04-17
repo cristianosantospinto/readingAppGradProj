@@ -20,16 +20,16 @@ class BookObject: SKSpriteNode {
    }
     
 
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {              //
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {             //
         delegate?.bookTouched()
         
     }
     
-
-    
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         for touch in touches {
-            let location = touch.locationInNode(scene)
+            let location = (touch as! UITouch).locationInNode(scene)
+           
+            
             let touchedNode = nodeAtPoint(location)                                                 //drag/click?
             let distance = hypotf(Float(location.x - position.x), Float(location.y - position.y)) //drag/click
             
@@ -37,6 +37,7 @@ class BookObject: SKSpriteNode {
                 if distance < 200 {                                 //drag/click - if user presses/drags anywhere 200px away then cancel press
                    delegate?.transitionToBook(bookName)
                 }
+                
                 
             }
             
@@ -48,5 +49,5 @@ class BookObject: SKSpriteNode {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
- 
+  
 }

@@ -21,9 +21,9 @@ class BeachScene2: SKScene {
         addChild(button)
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        var touch: UITouch = touches.anyObject() as UITouch
-        var location = touch.locationInNode(self)
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
         var node = self.nodeAtPoint(location)
         
         // If previous button is touched, start transition to previous scene
@@ -33,6 +33,7 @@ class BeachScene2: SKScene {
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
             self.scene!.view?.presentScene(mainMenu, transition: transition)
         }
+        
     }
     
     override func update(currentTime: CFTimeInterval) {

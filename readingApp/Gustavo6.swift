@@ -1,18 +1,18 @@
 //
-//  BeachScene1.swift
+//  Gustavo6.swift
 //  readingApp
 //
-//  Created by Cristiano Santos-Pinto on 08/03/2015.
+//  Created by Cristiano Santos-Pinto on 16/04/2015.
 //  Copyright (c) 2015 Cristiano Santos-Pinto. All rights reserved.
 //
 
 import SpriteKit
 
-class MattHotel: SKScene {
+class Gustavo6: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        let background = SKSpriteNode(imageNamed: "scene1")
+        let background = SKSpriteNode(imageNamed: "6Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
         
@@ -29,7 +29,7 @@ class MattHotel: SKScene {
     
     func swipedRight(sender:UISwipeGestureRecognizer){
         
-        let Scene = BeachScene2(size:self.size)
+        let Scene = Gustavo7(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
         self.view?.presentScene(Scene, transition: reveal)
@@ -37,16 +37,13 @@ class MattHotel: SKScene {
     
     func swipedLeft(sender:UISwipeGestureRecognizer){
         
-        let Scene = SplashScreen(size:self.size)
+        let Scene = Gustavo5(size:self.size)
         Scene.scaleMode = scaleMode
-        let reveal = SKTransition.fadeWithDuration(1.0)
+        let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         self.view?.presentScene(Scene, transition: reveal)
     }
     
     
-    //println("swiped right")
     
 }
-
-
 
