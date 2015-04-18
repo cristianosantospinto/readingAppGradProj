@@ -45,7 +45,7 @@ override func update(currentTime: CFTimeInterval) {
     
     
     if elapsedTime >= 3.0 {
-        let pause = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 1))   //delay before fading
+        let pause = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 2))   //delay before fading
         dispatch_after(pause, dispatch_get_main_queue()){
             
             self.sceneFade()

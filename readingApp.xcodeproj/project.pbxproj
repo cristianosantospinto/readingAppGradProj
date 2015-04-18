@@ -76,12 +76,12 @@
 		88072C5A1AE10F9300F2B856 /* 14.1Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 88072C3F1AE10F9300F2B856 /* 14.1Monkey.png */; };
 		88072C5B1AE10F9300F2B856 /* 14.2Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 88072C401AE10F9300F2B856 /* 14.2Monkey.png */; };
 		88072C5C1AE10F9300F2B856 /* 14.3Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 88072C411AE10F9300F2B856 /* 14.3Monkey.png */; };
-		88072C5D1AE10F9300F2B856 /* 14.4.png in Resources */ = {isa = PBXBuildFile; fileRef = 88072C421AE10F9300F2B856 /* 14.4.png */; };
 		88072C5E1AE10F9300F2B856 /* 14.4Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 88072C431AE10F9300F2B856 /* 14.4Monkey.png */; };
 		88072C5F1AE10F9300F2B856 /* 15Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 88072C441AE10F9300F2B856 /* 15Monkey.png */; };
 		88072C601AE10F9300F2B856 /* 16Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 88072C451AE10F9300F2B856 /* 16Monkey.png */; };
 		88072C631AE10FB900F2B856 /* 10Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 88072C611AE10FB900F2B856 /* 10Monkey.png */; };
 		88072C641AE10FB900F2B856 /* 11Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 88072C621AE10FB900F2B856 /* 11Monkey.png */; };
+		8814FC091AE1711300F55E0A /* Monkey2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814FC081AE1711300F55E0A /* Monkey2.swift */; };
 		884E73851AAC6777009A2FDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884E73841AAC6777009A2FDB /* LaunchScreen.xib */; };
 		8856D3741AAB8EAF00D92C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3731AAB8EAF00D92C79 /* AppDelegate.swift */; };
 		8856D3781AAB8EAF00D92C79 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3771AAB8EAF00D92C79 /* GameScene.swift */; };
@@ -93,6 +93,36 @@
 		886A29691AB82DA000630B3B /* mainMenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 886A29671AB82DA000630B3B /* mainMenuButton.png */; };
 		886A296C1AB82E5600630B3B /* BeachScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A296B1AB82E5600630B3B /* BeachScene2.swift */; };
 		8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871F00F1AAC497E0065880F /* BeachScene1.swift */; };
+		8872DF2B1AE2E4770098BA3B /* GustavoHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872DF291AE2E4770098BA3B /* GustavoHome.png */; };
+		8872DF2C1AE2E4770098BA3B /* GustavoRetry.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872DF2A1AE2E4770098BA3B /* GustavoRetry.png */; };
+		8872DF2F1AE2E4890098BA3B /* MonkeyHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872DF2D1AE2E4890098BA3B /* MonkeyHome.png */; };
+		8872DF301AE2E4890098BA3B /* MonkeyRetry.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872DF2E1AE2E4890098BA3B /* MonkeyRetry.png */; };
+		8884F4A11AE27A260066EB46 /* Monkey3F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4A01AE27A260066EB46 /* Monkey3F.swift */; };
+		8884F4A31AE27A310066EB46 /* Monkey3I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4A21AE27A310066EB46 /* Monkey3I.swift */; };
+		8884F4A51AE27A400066EB46 /* Monkey4F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4A41AE27A400066EB46 /* Monkey4F.swift */; };
+		8884F4A71AE27ACF0066EB46 /* Monkey4I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4A61AE27ACF0066EB46 /* Monkey4I.swift */; };
+		8884F4A91AE27AE50066EB46 /* Monkey5F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4A81AE27AE50066EB46 /* Monkey5F.swift */; };
+		8884F4AB1AE27AF30066EB46 /* Monkey5I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4AA1AE27AF30066EB46 /* Monkey5I.swift */; };
+		8884F4AD1AE27B040066EB46 /* Monkey6F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4AC1AE27B040066EB46 /* Monkey6F.swift */; };
+		8884F4AF1AE27B1B0066EB46 /* Monkey6I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4AE1AE27B1B0066EB46 /* Monkey6I.swift */; };
+		8884F4B11AE27B3A0066EB46 /* Monkey7F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4B01AE27B3A0066EB46 /* Monkey7F.swift */; };
+		8884F4B31AE27B470066EB46 /* Monkey7I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4B21AE27B470066EB46 /* Monkey7I.swift */; };
+		8884F4B51AE27B5C0066EB46 /* Monkey8F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4B41AE27B5C0066EB46 /* Monkey8F.swift */; };
+		8884F4B71AE27B6A0066EB46 /* Monkey8I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4B61AE27B6A0066EB46 /* Monkey8I.swift */; };
+		8884F4C51AE280DC0066EB46 /* Monkey9Fc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4C41AE280DC0066EB46 /* Monkey9Fc.swift */; };
+		8884F4C71AE280F20066EB46 /* Monkey9Fb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4C61AE280F20066EB46 /* Monkey9Fb.swift */; };
+		8884F4C91AE281040066EB46 /* Monkey9Is.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4C81AE281040066EB46 /* Monkey9Is.swift */; };
+		8884F4CB1AE2810F0066EB46 /* Monkey9Ip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4CA1AE2810F0066EB46 /* Monkey9Ip.swift */; };
+		8884F4CD1AE281EA0066EB46 /* Monkey10F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4CC1AE281EA0066EB46 /* Monkey10F.swift */; };
+		8884F4CF1AE281F20066EB46 /* Monkey10I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4CE1AE281F20066EB46 /* Monkey10I.swift */; };
+		8884F4D51AE283820066EB46 /* Monkey11Fs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4D41AE283820066EB46 /* Monkey11Fs.swift */; };
+		8884F4D71AE283900066EB46 /* Monkey11Fc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4D61AE283900066EB46 /* Monkey11Fc.swift */; };
+		8884F4D91AE283A70066EB46 /* Monkey11Is.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4D81AE283A70066EB46 /* Monkey11Is.swift */; };
+		8884F4DB1AE283AE0066EB46 /* Monkey11Ic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4DA1AE283AE0066EB46 /* Monkey11Ic.swift */; };
+		8884F4DF1AE285830066EB46 /* Monkey12F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4DE1AE285830066EB46 /* Monkey12F.swift */; };
+		8884F4E11AE286550066EB46 /* Monkey12I .swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4E01AE286550066EB46 /* Monkey12I .swift */; };
+		8884F4E31AE286DF0066EB46 /* Monkey13F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4E21AE286DF0066EB46 /* Monkey13F.swift */; };
+		8884F4E51AE286EB0066EB46 /* Monkey13I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4E41AE286EB0066EB46 /* Monkey13I.swift */; };
 		88AE43F01AC165F6005D2940 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AE43EF1AC165F6005D2940 /* Images.xcassets */; };
 		88D5ED2B1AADB0D9008C88F1 /* BookObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */; };
 /* End PBXBuildFile section */
@@ -177,12 +207,12 @@
 		88072C3F1AE10F9300F2B856 /* 14.1Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 14.1Monkey.png; path = images/Monkey/14.1Monkey.png; sourceTree = SOURCE_ROOT; };
 		88072C401AE10F9300F2B856 /* 14.2Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 14.2Monkey.png; path = images/Monkey/14.2Monkey.png; sourceTree = SOURCE_ROOT; };
 		88072C411AE10F9300F2B856 /* 14.3Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 14.3Monkey.png; path = images/Monkey/14.3Monkey.png; sourceTree = SOURCE_ROOT; };
-		88072C421AE10F9300F2B856 /* 14.4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 14.4.png; path = images/Monkey/14.4.png; sourceTree = SOURCE_ROOT; };
 		88072C431AE10F9300F2B856 /* 14.4Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 14.4Monkey.png; path = images/Monkey/14.4Monkey.png; sourceTree = SOURCE_ROOT; };
 		88072C441AE10F9300F2B856 /* 15Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 15Monkey.png; path = images/Monkey/15Monkey.png; sourceTree = SOURCE_ROOT; };
 		88072C451AE10F9300F2B856 /* 16Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 16Monkey.png; path = images/Monkey/16Monkey.png; sourceTree = SOURCE_ROOT; };
 		88072C611AE10FB900F2B856 /* 10Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 10Monkey.png; path = images/Monkey/10Monkey.png; sourceTree = SOURCE_ROOT; };
 		88072C621AE10FB900F2B856 /* 11Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 11Monkey.png; path = images/Monkey/11Monkey.png; sourceTree = SOURCE_ROOT; };
+		8814FC081AE1711300F55E0A /* Monkey2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey2.swift; sourceTree = "<group>"; };
 		884E73841AAC6777009A2FDB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8856D36E1AAB8EAF00D92C79 /* readingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = readingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8856D3721AAB8EAF00D92C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -198,6 +228,36 @@
 		886A29671AB82DA000630B3B /* mainMenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainMenuButton.png; sourceTree = "<group>"; };
 		886A296B1AB82E5600630B3B /* BeachScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeachScene2.swift; sourceTree = "<group>"; };
 		8871F00F1AAC497E0065880F /* BeachScene1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeachScene1.swift; path = ../BeachScene1.swift; sourceTree = "<group>"; };
+		8872DF291AE2E4770098BA3B /* GustavoHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GustavoHome.png; path = images/Gustavo/GustavoHome.png; sourceTree = SOURCE_ROOT; };
+		8872DF2A1AE2E4770098BA3B /* GustavoRetry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GustavoRetry.png; path = images/Gustavo/GustavoRetry.png; sourceTree = SOURCE_ROOT; };
+		8872DF2D1AE2E4890098BA3B /* MonkeyHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MonkeyHome.png; path = images/Monkey/MonkeyHome.png; sourceTree = SOURCE_ROOT; };
+		8872DF2E1AE2E4890098BA3B /* MonkeyRetry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MonkeyRetry.png; path = images/Monkey/MonkeyRetry.png; sourceTree = SOURCE_ROOT; };
+		8884F4A01AE27A260066EB46 /* Monkey3F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey3F.swift; sourceTree = "<group>"; };
+		8884F4A21AE27A310066EB46 /* Monkey3I.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey3I.swift; sourceTree = "<group>"; };
+		8884F4A41AE27A400066EB46 /* Monkey4F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey4F.swift; sourceTree = "<group>"; };
+		8884F4A61AE27ACF0066EB46 /* Monkey4I.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey4I.swift; sourceTree = "<group>"; };
+		8884F4A81AE27AE50066EB46 /* Monkey5F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey5F.swift; sourceTree = "<group>"; };
+		8884F4AA1AE27AF30066EB46 /* Monkey5I.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey5I.swift; sourceTree = "<group>"; };
+		8884F4AC1AE27B040066EB46 /* Monkey6F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey6F.swift; sourceTree = "<group>"; };
+		8884F4AE1AE27B1B0066EB46 /* Monkey6I.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey6I.swift; sourceTree = "<group>"; };
+		8884F4B01AE27B3A0066EB46 /* Monkey7F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey7F.swift; sourceTree = "<group>"; };
+		8884F4B21AE27B470066EB46 /* Monkey7I.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey7I.swift; sourceTree = "<group>"; };
+		8884F4B41AE27B5C0066EB46 /* Monkey8F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey8F.swift; sourceTree = "<group>"; };
+		8884F4B61AE27B6A0066EB46 /* Monkey8I.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey8I.swift; sourceTree = "<group>"; };
+		8884F4C41AE280DC0066EB46 /* Monkey9Fc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey9Fc.swift; sourceTree = "<group>"; };
+		8884F4C61AE280F20066EB46 /* Monkey9Fb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey9Fb.swift; sourceTree = "<group>"; };
+		8884F4C81AE281040066EB46 /* Monkey9Is.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey9Is.swift; sourceTree = "<group>"; };
+		8884F4CA1AE2810F0066EB46 /* Monkey9Ip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey9Ip.swift; sourceTree = "<group>"; };
+		8884F4CC1AE281EA0066EB46 /* Monkey10F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey10F.swift; sourceTree = "<group>"; };
+		8884F4CE1AE281F20066EB46 /* Monkey10I.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey10I.swift; sourceTree = "<group>"; };
+		8884F4D41AE283820066EB46 /* Monkey11Fs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monkey11Fs.swift; path = ../Monkey11Fs.swift; sourceTree = "<group>"; };
+		8884F4D61AE283900066EB46 /* Monkey11Fc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monkey11Fc.swift; path = ../Monkey11Fc.swift; sourceTree = "<group>"; };
+		8884F4D81AE283A70066EB46 /* Monkey11Is.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey11Is.swift; sourceTree = "<group>"; };
+		8884F4DA1AE283AE0066EB46 /* Monkey11Ic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey11Ic.swift; sourceTree = "<group>"; };
+		8884F4DE1AE285830066EB46 /* Monkey12F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey12F.swift; sourceTree = "<group>"; };
+		8884F4E01AE286550066EB46 /* Monkey12I .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Monkey12I .swift"; sourceTree = "<group>"; };
+		8884F4E21AE286DF0066EB46 /* Monkey13F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey13F.swift; sourceTree = "<group>"; };
+		8884F4E41AE286EB0066EB46 /* Monkey13I.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey13I.swift; sourceTree = "<group>"; };
 		88AE43EF1AC165F6005D2940 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,6 +302,8 @@
 				88072BF31ADFDE8100F2B856 /* park.png */,
 				88072BF41ADFDE8100F2B856 /* taxi.png */,
 				88072BF51ADFDE8100F2B856 /* train.png */,
+				8872DF291AE2E4770098BA3B /* GustavoHome.png */,
+				8872DF2A1AE2E4770098BA3B /* GustavoRetry.png */,
 			);
 			name = GustavoStory;
 			sourceTree = "<group>";
@@ -272,7 +334,6 @@
 				88072C3F1AE10F9300F2B856 /* 14.1Monkey.png */,
 				88072C401AE10F9300F2B856 /* 14.2Monkey.png */,
 				88072C411AE10F9300F2B856 /* 14.3Monkey.png */,
-				88072C421AE10F9300F2B856 /* 14.4.png */,
 				88072C431AE10F9300F2B856 /* 14.4Monkey.png */,
 				88072C441AE10F9300F2B856 /* 15Monkey.png */,
 				88072C451AE10F9300F2B856 /* 16Monkey.png */,
@@ -283,6 +344,8 @@
 				88072BC11ADFDE6F00F2B856 /* eiffel.png */,
 				88072BC21ADFDE6F00F2B856 /* pizza.png */,
 				88072BC31ADFDE6F00F2B856 /* spaghetti.png */,
+				8872DF2D1AE2E4890098BA3B /* MonkeyHome.png */,
+				8872DF2E1AE2E4890098BA3B /* MonkeyRetry.png */,
 				88072BC41ADFDE6F00F2B856 /* strawberry.png */,
 			);
 			name = MonkeyStory;
@@ -313,6 +376,33 @@
 			isa = PBXGroup;
 			children = (
 				88072C0B1ADFDFBB00F2B856 /* Monkey1.swift */,
+				8814FC081AE1711300F55E0A /* Monkey2.swift */,
+				8884F4A01AE27A260066EB46 /* Monkey3F.swift */,
+				8884F4A21AE27A310066EB46 /* Monkey3I.swift */,
+				8884F4A41AE27A400066EB46 /* Monkey4F.swift */,
+				8884F4A61AE27ACF0066EB46 /* Monkey4I.swift */,
+				8884F4A81AE27AE50066EB46 /* Monkey5F.swift */,
+				8884F4AA1AE27AF30066EB46 /* Monkey5I.swift */,
+				8884F4AC1AE27B040066EB46 /* Monkey6F.swift */,
+				8884F4AE1AE27B1B0066EB46 /* Monkey6I.swift */,
+				8884F4B01AE27B3A0066EB46 /* Monkey7F.swift */,
+				8884F4B21AE27B470066EB46 /* Monkey7I.swift */,
+				8884F4B41AE27B5C0066EB46 /* Monkey8F.swift */,
+				8884F4B61AE27B6A0066EB46 /* Monkey8I.swift */,
+				8884F4C41AE280DC0066EB46 /* Monkey9Fc.swift */,
+				8884F4C61AE280F20066EB46 /* Monkey9Fb.swift */,
+				8884F4C81AE281040066EB46 /* Monkey9Is.swift */,
+				8884F4CA1AE2810F0066EB46 /* Monkey9Ip.swift */,
+				8884F4CC1AE281EA0066EB46 /* Monkey10F.swift */,
+				8884F4CE1AE281F20066EB46 /* Monkey10I.swift */,
+				8884F4D41AE283820066EB46 /* Monkey11Fs.swift */,
+				8884F4D61AE283900066EB46 /* Monkey11Fc.swift */,
+				8884F4D81AE283A70066EB46 /* Monkey11Is.swift */,
+				8884F4DA1AE283AE0066EB46 /* Monkey11Ic.swift */,
+				8884F4DE1AE285830066EB46 /* Monkey12F.swift */,
+				8884F4E01AE286550066EB46 /* Monkey12I .swift */,
+				8884F4E21AE286DF0066EB46 /* Monkey13F.swift */,
+				8884F4E41AE286EB0066EB46 /* Monkey13I.swift */,
 			);
 			name = MonkeyStory;
 			sourceTree = "<group>";
@@ -498,6 +588,7 @@
 				88072C561AE10F9300F2B856 /* 13.2Monkey.png in Resources */,
 				88072BDD1ADFDE6F00F2B856 /* colloseum.png in Resources */,
 				88072C031ADFDE8100F2B856 /* 14Gustavo.png in Resources */,
+				8872DF301AE2E4890098BA3B /* MonkeyRetry.png in Resources */,
 				88072C5E1AE10F9300F2B856 /* 14.4Monkey.png in Resources */,
 				88072C081ADFDE8100F2B856 /* train.png in Resources */,
 				88072BF71ADFDE8100F2B856 /* 2Gustavo.png in Resources */,
@@ -522,6 +613,7 @@
 				88072C4A1AE10F9300F2B856 /* 5Monkey.png in Resources */,
 				88072BF81ADFDE8100F2B856 /* 3Gustavo.png in Resources */,
 				88072C4B1AE10F9300F2B856 /* 6Monkey.png in Resources */,
+				8872DF2B1AE2E4770098BA3B /* GustavoHome.png in Resources */,
 				88072C4C1AE10F9300F2B856 /* 7Monkey.png in Resources */,
 				88072BFC1ADFDE8100F2B856 /* 7Gustavo.png in Resources */,
 				88072C571AE10F9300F2B856 /* 13.3Monkey.png in Resources */,
@@ -532,6 +624,8 @@
 				88072C5A1AE10F9300F2B856 /* 14.1Monkey.png in Resources */,
 				88072C4E1AE10F9300F2B856 /* 9Monkey.png in Resources */,
 				88072C5B1AE10F9300F2B856 /* 14.2Monkey.png in Resources */,
+				8872DF2F1AE2E4890098BA3B /* MonkeyHome.png in Resources */,
+				8872DF2C1AE2E4770098BA3B /* GustavoRetry.png in Resources */,
 				88072BDF1ADFDE6F00F2B856 /* eiffel.png in Resources */,
 				88AE43F01AC165F6005D2940 /* Images.xcassets in Resources */,
 				88072C531AE10F9300F2B856 /* 12.3Monkey.png in Resources */,
@@ -544,7 +638,6 @@
 				88072BA21ADFDE0100F2B856 /* scrollingBg2.png in Resources */,
 				88072BF91ADFDE8100F2B856 /* 4Gustavo.png in Resources */,
 				88072B9E1ADFDE0100F2B856 /* GustavoBook.png in Resources */,
-				88072C5D1AE10F9300F2B856 /* 14.4.png in Resources */,
 				88072C011ADFDE8100F2B856 /* 12Gustavo.png in Resources */,
 				88072B9C1ADFDE0100F2B856 /* appCloud1.png in Resources */,
 				88072BF61ADFDE8100F2B856 /* 1Gustavo.png in Resources */,
@@ -570,25 +663,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				886A296C1AB82E5600630B3B /* BeachScene2.swift in Sources */,
+				8884F4E51AE286EB0066EB46 /* Monkey13I.swift in Sources */,
 				886A29661AB71C6F00630B3B /* Gustavo1.swift in Sources */,
 				88072C241ADFE44000F2B856 /* Gustavo12.swift in Sources */,
 				88072C1E1ADFE40400F2B856 /* Gustavo10.swift in Sources */,
 				8871F0101AAC497E0065880F /* BeachScene1.swift in Sources */,
 				8856D3781AAB8EAF00D92C79 /* GameScene.swift in Sources */,
 				8856D37A1AAB8EAF00D92C79 /* GameViewController.swift in Sources */,
+				8884F4E31AE286DF0066EB46 /* Monkey13F.swift in Sources */,
 				88D5ED2B1AADB0D9008C88F1 /* BookObject.swift in Sources */,
+				8884F4D91AE283A70066EB46 /* Monkey11Is.swift in Sources */,
 				88072C1C1ADFE3F700F2B856 /* Gustavo9.swift in Sources */,
 				88072C0C1ADFDFBB00F2B856 /* Monkey1.swift in Sources */,
 				8856D3741AAB8EAF00D92C79 /* AppDelegate.swift in Sources */,
+				8884F4AF1AE27B1B0066EB46 /* Monkey6I.swift in Sources */,
+				8884F4E11AE286550066EB46 /* Monkey12I .swift in Sources */,
+				8814FC091AE1711300F55E0A /* Monkey2.swift in Sources */,
 				88072C141ADFE3B700F2B856 /* Gustavo5.swift in Sources */,
+				8884F4B31AE27B470066EB46 /* Monkey7I.swift in Sources */,
 				88072C0E1ADFE12300F2B856 /* Gustavo2.swift in Sources */,
 				88072C1A1ADFE3E700F2B856 /* Gustavo8.swift in Sources */,
+				8884F4C71AE280F20066EB46 /* Monkey9Fb.swift in Sources */,
+				8884F4B71AE27B6A0066EB46 /* Monkey8I.swift in Sources */,
+				8884F4A91AE27AE50066EB46 /* Monkey5F.swift in Sources */,
+				8884F4CD1AE281EA0066EB46 /* Monkey10F.swift in Sources */,
+				8884F4CF1AE281F20066EB46 /* Monkey10I.swift in Sources */,
 				88072C201ADFE41200F2B856 /* Gustavo11.swift in Sources */,
 				88072C161ADFE3C700F2B856 /* Gustavo6.swift in Sources */,
+				8884F4D71AE283900066EB46 /* Monkey11Fc.swift in Sources */,
+				8884F4A71AE27ACF0066EB46 /* Monkey4I.swift in Sources */,
+				8884F4A31AE27A310066EB46 /* Monkey3I.swift in Sources */,
+				8884F4DB1AE283AE0066EB46 /* Monkey11Ic.swift in Sources */,
+				8884F4C91AE281040066EB46 /* Monkey9Is.swift in Sources */,
+				8884F4C51AE280DC0066EB46 /* Monkey9Fc.swift in Sources */,
+				8884F4A51AE27A400066EB46 /* Monkey4F.swift in Sources */,
 				88072C281ADFE46200F2B856 /* Gustavo14.swift in Sources */,
+				8884F4B51AE27B5C0066EB46 /* Monkey8F.swift in Sources */,
+				8884F4DF1AE285830066EB46 /* Monkey12F.swift in Sources */,
+				8884F4D51AE283820066EB46 /* Monkey11Fs.swift in Sources */,
 				88072C101ADFE18500F2B856 /* Gustavo3.swift in Sources */,
 				88072C121ADFE2B400F2B856 /* Gustavo4.swift in Sources */,
+				8884F4B11AE27B3A0066EB46 /* Monkey7F.swift in Sources */,
+				8884F4AD1AE27B040066EB46 /* Monkey6F.swift in Sources */,
 				88072C261ADFE45100F2B856 /* Gustavo13.swift in Sources */,
+				8884F4CB1AE2810F0066EB46 /* Monkey9Ip.swift in Sources */,
+				8884F4AB1AE27AF30066EB46 /* Monkey5I.swift in Sources */,
+				8884F4A11AE27A260066EB46 /* Monkey3F.swift in Sources */,
 				88072C181ADFE3D700F2B856 /* Gustavo7.swift in Sources */,
 				8856D3981AAB8F0800D92C79 /* SplashScreen.swift in Sources */,
 			);

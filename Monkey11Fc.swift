@@ -1,18 +1,18 @@
 //
-//  Gustavo6.swift
+//  Monkey11Fc.swift
 //  readingApp
 //
-//  Created by Cristiano Santos-Pinto on 16/04/2015.
+//  Created by Cristiano Santos-Pinto on 18/04/2015.
 //  Copyright (c) 2015 Cristiano Santos-Pinto. All rights reserved.
 //
 
 import SpriteKit
 
-class Gustavo6: SKScene {
+class Monkey11Fc: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        let background = SKSpriteNode(imageNamed: "6Gustavo")
+        let background = SKSpriteNode(imageNamed: "14.1Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
         
@@ -29,7 +29,7 @@ class Gustavo6: SKScene {
     
     func swipedRight(sender:UISwipeGestureRecognizer){
         
-        let Scene = Gustavo7(size:self.size)
+        let Scene = Monkey12F(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
         self.view?.presentScene(Scene, transition: reveal)
@@ -37,12 +37,11 @@ class Gustavo6: SKScene {
     
     func swipedLeft(sender:UISwipeGestureRecognizer){
         
-        let Scene = Gustavo3(size:self.size)
+        let Scene = Monkey8F(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         self.view?.presentScene(Scene, transition: reveal)
     }
-    
     
     
 }

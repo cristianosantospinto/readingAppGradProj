@@ -1,31 +1,30 @@
 //
-//  Gustavo14.swift
+//  Monkey2.swift
 //  readingApp
 //
-//  Created by Cristiano Santos-Pinto on 16/04/2015.
+//  Created by Cristiano Santos-Pinto on 17/04/2015.
 //  Copyright (c) 2015 Cristiano Santos-Pinto. All rights reserved.
 //
 
 import SpriteKit
 
-class Gustavo14: SKScene {
+class Monkey2: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        let background = SKSpriteNode(imageNamed: "14Gustavo")
+        let background = SKSpriteNode(imageNamed: "2Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
-
-    
-        var GustavoHome = SKSpriteNode(imageNamed: "GustavoHome")
-        GustavoHome.position = CGPoint(x: size.width/2 + 230, y: size.height/2 - 300)
-        GustavoHome.name = "GustavoHome"
-        addChild(GustavoHome)
         
-        var GustavoRetry = SKSpriteNode(imageNamed: "GustavoRetry")
-        GustavoRetry.position = CGPoint(x: size.width/2 - 300, y: size.height/2 - 300)
-        GustavoRetry.name = "GustavoRetry"
-        addChild(GustavoRetry)
+        var france = SKSpriteNode(imageNamed: "eiffel")
+        france.position = CGPoint(x: size.width/2 + 300, y: size.height/2 + 350)
+        france.name = "eiffel"
+        addChild(france)
+        
+        var italy = SKSpriteNode(imageNamed: "colloseum")
+        italy.position = CGPoint(x: size.width/2 + 830, y: size.height/2 - 200)
+        italy.name = "colloseum"
+        addChild(italy)
         
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
@@ -35,9 +34,11 @@ class Gustavo14: SKScene {
         
         
     }
+    
+    
     func swipedLeft(sender:UISwipeGestureRecognizer){
         
-        let Scene = Gustavo13(size:self.size)
+        let Scene = Monkey1(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         self.view?.presentScene(Scene, transition: reveal)
@@ -49,14 +50,14 @@ class Gustavo14: SKScene {
         var location = touch!.locationInNode(self)
         var node = self.nodeAtPoint(location)
         
-        if (node.name == "GustavoHome") {
-            var mainMenu = GameScene(size: self.size)
+        if (node.name == "eiffel") {
+            var mainMenu = Monkey3F(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
             self.scene!.view?.presentScene(mainMenu, transition: transition)
             
-        }   else if (node.name == "GustavoRetry") {
-            var mainMenu = Gustavo1(size: self.size)
+        }   else if (node.name == "colloseum") {
+            var mainMenu = Monkey3I(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
             self.scene!.view?.presentScene(mainMenu, transition: transition)

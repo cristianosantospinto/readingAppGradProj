@@ -29,7 +29,7 @@ class Gustavo4: SKScene {
     
     func swipedRight(sender:UISwipeGestureRecognizer){
         
-        let Scene = Gustavo5(size:self.size)
+        let Scene = Gustavo7(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
         self.view?.presentScene(Scene, transition: reveal)

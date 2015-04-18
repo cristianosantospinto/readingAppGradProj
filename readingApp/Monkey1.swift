@@ -25,7 +25,7 @@ class Monkey1: SKScene {
     }
     
     func sceneFade() {
-        let scene = GameScene(size:self.size)
+        let scene = Monkey2(size:self.size)
         scene.scaleMode = scaleMode
         let reveal = SKTransition.fadeWithDuration(3.0)
         self.view?.presentScene(scene, transition: reveal)
@@ -43,7 +43,7 @@ class Monkey1: SKScene {
         
         
         if elapsedTime >= 3.0 {
-            let pause = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 1))   //delay before fading
+            let pause = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 2))   //delay before fading
             dispatch_after(pause, dispatch_get_main_queue()){
                 
                 self.sceneFade()
