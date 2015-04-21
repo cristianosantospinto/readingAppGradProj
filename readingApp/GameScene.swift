@@ -8,10 +8,11 @@
 
 import SpriteKit
 
-class GameScene: SKScene {          //scene setup
+class GameScene: SKScene  {          //scene setup
   
-    let background1 = SKSpriteNode(imageNamed: "scrollingBg1")
-    let background2 = SKSpriteNode(imageNamed: "scrollingBg2")        //scrolling background setup images
+    let background1 = SKSpriteNode(imageNamed: "scrollingBg1") //scrolling background setup images
+    let background2 = SKSpriteNode(imageNamed: "scrollingBg2")
+      
     
 override func didMoveToView(view: SKView) {
     
@@ -25,7 +26,8 @@ override func didMoveToView(view: SKView) {
     //background2.zPosition = -15
     self.addChild(background2)
     
-    
+
+      
     
         let bookOne = BookObject(imageNamed: "GustavoBook", bookNamed: "bookOne")       //can change to same name as image 'bookNamed...'
         bookOne.position = CGPoint(x: size.width/2 - 350, y: size.height/2)
@@ -47,28 +49,37 @@ override func didMoveToView(view: SKView) {
     bookOne.physicsBody?.restitution =  1
     self.physicsWorld.gravity.dy = -1 */
     
-    let rotateR = SKAction.rotateByAngle(0.1, duration: 1)
-    let rotateL = SKAction.rotateByAngle(-0.1, duration: 1)
-    let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
-    let wiggle = SKAction.repeatActionForever(cycle)
-    bookOne.runAction(wiggle)
-    bookTwo.runAction(wiggle)
+    let move = SKAction.moveByX(0, y: 100, duration: 5, delay: 0.5, usingSpringWithDamping: 0.2, initialSpringVelocity: 0)
+    bookOne.runAction(move)
     
-    let cloud1 = SKSpriteNode(imageNamed: "appCloud1")
-    cloud1.position = CGPoint(x: size.width/2 - 350, y: size.height/2 - 190)
-    addChild(cloud1)
+            let rotateR = SKAction.rotateByAngle(0.1, duration: 1)
+            let rotateL = SKAction.rotateByAngle(-0.1, duration: 1)
+            let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+            let wiggle = SKAction.repeatActionForever(cycle)
+            //bookOne.runAction(wiggle)
+            bookTwo.runAction(wiggle)
+
+            //bookOne.setScale(0)
+            bookTwo.setScale(0)
+            let popAction = SKAction.scaleTo(1, duration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0)
+            //bookOne.runAction(popAction)
+            bookTwo.runAction(popAction)
     
-    let cloud2 = SKSpriteNode(imageNamed: "appCloud2")
-    cloud2.position = CGPoint(x: size.width/2 + 350, y: size.height/2 - 190)
-    addChild(cloud2)
+
     
-        }
+        let cloud1 = SKSpriteNode(imageNamed: "appCloud1")
+        cloud1.position = CGPoint(x: size.width/2 - 350, y: size.height/2 - 190)
+        addChild(cloud1)
+    
+        let cloud2 = SKSpriteNode(imageNamed: "appCloud2")
+        cloud2.position = CGPoint(x: size.width/2 + 350, y: size.height/2 - 190)
+        addChild(cloud2)
     
     
  
     
     }
-
+}
 
 
 extension GameScene: BookObjectDelegate {       //extend bookObject?            //good practice to put delegates at bottom
@@ -107,7 +118,7 @@ extension GameScene: BookObjectDelegate {       //extend bookObject?            
             
         }
         
-        }
+    }
     
     override func update(currentTime: CFTimeInterval) {             //scrolling of background
         
@@ -125,7 +136,6 @@ extension GameScene: BookObjectDelegate {       //extend bookObject?            
             
         }
         
+        }
+
     }
-
-
-}

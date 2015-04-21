@@ -83,6 +83,7 @@
 		88072C641AE10FB900F2B856 /* 11Monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 88072C621AE10FB900F2B856 /* 11Monkey.png */; };
 		8814FC091AE1711300F55E0A /* Monkey2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814FC081AE1711300F55E0A /* Monkey2.swift */; };
 		884E73851AAC6777009A2FDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884E73841AAC6777009A2FDB /* LaunchScreen.xib */; };
+		8853AB131AE52F700084775B /* SpriteKit+Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8853AB121AE52F700084775B /* SpriteKit+Spring.swift */; };
 		8856D3741AAB8EAF00D92C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3731AAB8EAF00D92C79 /* AppDelegate.swift */; };
 		8856D3781AAB8EAF00D92C79 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3771AAB8EAF00D92C79 /* GameScene.swift */; };
 		8856D37A1AAB8EAF00D92C79 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856D3791AAB8EAF00D92C79 /* GameViewController.swift */; };
@@ -214,6 +215,7 @@
 		88072C621AE10FB900F2B856 /* 11Monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 11Monkey.png; path = images/Monkey/11Monkey.png; sourceTree = SOURCE_ROOT; };
 		8814FC081AE1711300F55E0A /* Monkey2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey2.swift; sourceTree = "<group>"; };
 		884E73841AAC6777009A2FDB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		8853AB121AE52F700084775B /* SpriteKit+Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpriteKit+Spring.swift"; sourceTree = SOURCE_ROOT; };
 		8856D36E1AAB8EAF00D92C79 /* readingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = readingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8856D3721AAB8EAF00D92C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8856D3731AAB8EAF00D92C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -492,6 +494,7 @@
 				886A296B1AB82E5600630B3B /* BeachScene2.swift */,
 				8856D3771AAB8EAF00D92C79 /* GameScene.swift */,
 				8856D3971AAB8F0800D92C79 /* SplashScreen.swift */,
+				8853AB121AE52F700084775B /* SpriteKit+Spring.swift */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -664,6 +667,7 @@
 			files = (
 				886A296C1AB82E5600630B3B /* BeachScene2.swift in Sources */,
 				8884F4E51AE286EB0066EB46 /* Monkey13I.swift in Sources */,
+				8853AB131AE52F700084775B /* SpriteKit+Spring.swift in Sources */,
 				886A29661AB71C6F00630B3B /* Gustavo1.swift in Sources */,
 				88072C241ADFE44000F2B856 /* Gustavo12.swift in Sources */,
 				88072C1E1ADFE40400F2B856 /* Gustavo10.swift in Sources */,
