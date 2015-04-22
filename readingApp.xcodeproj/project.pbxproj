@@ -124,6 +124,12 @@
 		8884F4E11AE286550066EB46 /* Monkey12I .swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4E01AE286550066EB46 /* Monkey12I .swift */; };
 		8884F4E31AE286DF0066EB46 /* Monkey13F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4E21AE286DF0066EB46 /* Monkey13F.swift */; };
 		8884F4E51AE286EB0066EB46 /* Monkey13I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8884F4E41AE286EB0066EB46 /* Monkey13I.swift */; };
+		889391921AE69AEB00613293 /* bgMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 889391911AE69AEB00613293 /* bgMusic.wav */; };
+		889391941AE69C9300613293 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889391931AE69C9300613293 /* Sound.swift */; };
+		889391961AE69E3B00613293 /* music.wav in Resources */ = {isa = PBXBuildFile; fileRef = 889391951AE69E3B00613293 /* music.wav */; };
+		8893919A1AE6C52300613293 /* 1SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 889391971AE6C52300613293 /* 1SplashScreen.png */; };
+		8893919B1AE6C52300613293 /* animatingPlane.png in Resources */ = {isa = PBXBuildFile; fileRef = 889391981AE6C52300613293 /* animatingPlane.png */; };
+		8893919C1AE6C52300613293 /* SSanimating.png in Resources */ = {isa = PBXBuildFile; fileRef = 889391991AE6C52300613293 /* SSanimating.png */; };
 		88AE43F01AC165F6005D2940 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AE43EF1AC165F6005D2940 /* Images.xcassets */; };
 		88D5ED2B1AADB0D9008C88F1 /* BookObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */; };
 /* End PBXBuildFile section */
@@ -260,6 +266,12 @@
 		8884F4E01AE286550066EB46 /* Monkey12I .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Monkey12I .swift"; sourceTree = "<group>"; };
 		8884F4E21AE286DF0066EB46 /* Monkey13F.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey13F.swift; sourceTree = "<group>"; };
 		8884F4E41AE286EB0066EB46 /* Monkey13I.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey13I.swift; sourceTree = "<group>"; };
+		889391911AE69AEB00613293 /* bgMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bgMusic.wav; sourceTree = SOURCE_ROOT; };
+		889391931AE69C9300613293 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sound.swift; path = ../Sound.swift; sourceTree = "<group>"; };
+		889391951AE69E3B00613293 /* music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = music.wav; path = ../../music.wav; sourceTree = "<group>"; };
+		889391971AE6C52300613293 /* 1SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1SplashScreen.png; sourceTree = SOURCE_ROOT; };
+		889391981AE6C52300613293 /* animatingPlane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatingPlane.png; sourceTree = SOURCE_ROOT; };
+		889391991AE6C52300613293 /* SSanimating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSanimating.png; sourceTree = SOURCE_ROOT; };
 		88AE43EF1AC165F6005D2940 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -478,8 +490,13 @@
 				88072B971ADFDE0100F2B856 /* MonkeyBook.png */,
 				88072B991ADFDE0100F2B856 /* scrollingBg1.png */,
 				88072C291ADFEE7C00F2B856 /* SplashScreen.png */,
+				889391971AE6C52300613293 /* 1SplashScreen.png */,
+				889391981AE6C52300613293 /* animatingPlane.png */,
+				889391991AE6C52300613293 /* SSanimating.png */,
 				88072B9A1ADFDE0100F2B856 /* scrollingBg2.png */,
 				886A29671AB82DA000630B3B /* mainMenuButton.png */,
+				889391911AE69AEB00613293 /* bgMusic.wav */,
+				889391951AE69E3B00613293 /* music.wav */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -495,6 +512,7 @@
 				8856D3771AAB8EAF00D92C79 /* GameScene.swift */,
 				8856D3971AAB8F0800D92C79 /* SplashScreen.swift */,
 				8853AB121AE52F700084775B /* SpriteKit+Spring.swift */,
+				889391931AE69C9300613293 /* Sound.swift */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -586,6 +604,7 @@
 				88072C551AE10F9300F2B856 /* 13.1Monkey.png in Resources */,
 				88072B9D1ADFDE0100F2B856 /* appCloud2.png in Resources */,
 				88072C5C1AE10F9300F2B856 /* 14.3Monkey.png in Resources */,
+				889391961AE69E3B00613293 /* music.wav in Resources */,
 				88072C521AE10F9300F2B856 /* 12.2Monkey.png in Resources */,
 				886A29691AB82DA000630B3B /* mainMenuButton.png in Resources */,
 				88072C561AE10F9300F2B856 /* 13.2Monkey.png in Resources */,
@@ -600,6 +619,7 @@
 				88072BDB1ADFDE6F00F2B856 /* baguette.png in Resources */,
 				884E73851AAC6777009A2FDB /* LaunchScreen.xib in Resources */,
 				88072BFA1ADFDE8100F2B856 /* 5Gustavo.png in Resources */,
+				889391921AE69AEB00613293 /* bgMusic.wav in Resources */,
 				88072C631AE10FB900F2B856 /* 10Monkey.png in Resources */,
 				88072C581AE10F9300F2B856 /* 13.4Monkey.png in Resources */,
 				88072C591AE10F9300F2B856 /* 13Monkey.png in Resources */,
@@ -618,6 +638,7 @@
 				88072C4B1AE10F9300F2B856 /* 6Monkey.png in Resources */,
 				8872DF2B1AE2E4770098BA3B /* GustavoHome.png in Resources */,
 				88072C4C1AE10F9300F2B856 /* 7Monkey.png in Resources */,
+				8893919C1AE6C52300613293 /* SSanimating.png in Resources */,
 				88072BFC1ADFDE8100F2B856 /* 7Gustavo.png in Resources */,
 				88072C571AE10F9300F2B856 /* 13.3Monkey.png in Resources */,
 				88072C001ADFDE8100F2B856 /* 11Gustavo.png in Resources */,
@@ -646,6 +667,8 @@
 				88072BF61ADFDE8100F2B856 /* 1Gustavo.png in Resources */,
 				8856D37D1AAB8EAF00D92C79 /* Main.storyboard in Resources */,
 				88072B9F1ADFDE0100F2B856 /* MonkeyBook.png in Resources */,
+				8893919A1AE6C52300613293 /* 1SplashScreen.png in Resources */,
+				8893919B1AE6C52300613293 /* animatingPlane.png in Resources */,
 				88072C511AE10F9300F2B856 /* 12.1Monkey.png in Resources */,
 				88072C021ADFDE8100F2B856 /* 13Gustavo.png in Resources */,
 			);
@@ -687,6 +710,7 @@
 				8884F4B31AE27B470066EB46 /* Monkey7I.swift in Sources */,
 				88072C0E1ADFE12300F2B856 /* Gustavo2.swift in Sources */,
 				88072C1A1ADFE3E700F2B856 /* Gustavo8.swift in Sources */,
+				889391941AE69C9300613293 /* Sound.swift in Sources */,
 				8884F4C71AE280F20066EB46 /* Monkey9Fb.swift in Sources */,
 				8884F4B71AE27B6A0066EB46 /* Monkey8I.swift in Sources */,
 				8884F4A91AE27AE50066EB46 /* Monkey5F.swift in Sources */,

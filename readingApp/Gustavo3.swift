@@ -59,6 +59,7 @@ class Gustavo3: SKScene {
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
             self.scene!.view?.presentScene(mainMenu, transition: transition)
+    
         
         }   else if (node.name == "taxi") {
                 var mainMenu = Gustavo6(size: self.size)
