@@ -31,16 +31,15 @@ class Gustavo3: SKScene {
         buttonBus.name = "bus"
         addChild(buttonBus)
         
-        let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
-        let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
-        view.addGestureRecognizer(swipeLeft)
+        let swipedRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+        //swipeRight.direction = .Right
+        view.addGestureRecognizer(swipedRight)
         
         
     }
     
     
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Gustavo2(size:self.size)
         Scene.scaleMode = scaleMode

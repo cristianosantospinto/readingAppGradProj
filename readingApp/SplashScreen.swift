@@ -17,7 +17,7 @@ class SplashScreen: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("music.wav")
+        playBackgroundMusic("1DV.wav")
         let background = SKSpriteNode(imageNamed: "1SplashScreen")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -27,7 +27,7 @@ class SplashScreen: SKScene {
         addChild(animatingSS)
     
         animatingSS.setScale(0)
-        let popAction = SKAction.scaleTo(1, duration: 2, delay: 2.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0)
+        let popAction = SKAction.scaleTo(1, duration: 3, delay: 2.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0)
         animatingSS.runAction(popAction)
         
         let animatingPlane = SKSpriteNode(imageNamed: "animatingPlane")
@@ -36,6 +36,20 @@ class SplashScreen: SKScene {
         
         let moveRight = SKAction.moveByX(3000, y:0, duration: 3.0)
         animatingPlane.runAction(moveRight)
+        
+        let YourDecisions = SKSpriteNode(imageNamed: "YourDecisions")
+        YourDecisions.position = CGPoint(x: size.width/2, y: size.height/2 - 500)
+            YourDecisions.runAction(SKAction.fadeOutWithDuration(4, delay: 7, usingSpringWithDamping: 2, initialSpringVelocity: 2))
+            addChild(YourDecisions)
+        
+        let clickAny = SKSpriteNode(imageNamed: "clickAny")
+        clickAny.position = CGPoint(x: size.width/2, y: size.height/2 - 1000)
+        addChild(clickAny)
+        
+        let moveClick = SKAction.moveByX(0, y: 500,
+            duration: 5, delay: 8.5,
+            usingSpringWithDamping: 0.2, initialSpringVelocity: 0)
+        clickAny.runAction(moveClick)
     }
     
     
@@ -43,6 +57,7 @@ class SplashScreen: SKScene {
         let scene = GameScene(size:self.size)
         scene.scaleMode = scaleMode
         let reveal = SKTransition.crossFadeWithDuration(1.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(scene, transition: reveal)
     }
     

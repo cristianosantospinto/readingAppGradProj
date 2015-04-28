@@ -12,6 +12,7 @@ class Monkey13F: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+        playBackgroundMusic("3DV.wav")
         let background = SKSpriteNode(imageNamed: "16Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -41,6 +42,7 @@ class Monkey13F: SKScene {
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         self.view?.presentScene(Scene, transition: reveal)
+        backgroundMusicPlayer.stop()
     }
     
     
@@ -54,12 +56,14 @@ class Monkey13F: SKScene {
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
             self.scene!.view?.presentScene(mainMenu, transition: transition)
+            backgroundMusicPlayer.stop()
             
         }   else if (node.name == "MonkeyRetry") {
             var mainMenu = Monkey1(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
             self.scene!.view?.presentScene(mainMenu, transition: transition)
+            backgroundMusicPlayer.stop()
             
         }
         

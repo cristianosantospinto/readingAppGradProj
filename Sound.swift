@@ -27,7 +27,7 @@ func playBackgroundMusic(filename: String) {
         return
     }
     
-    backgroundMusicPlayer.numberOfLoops = -1
+    backgroundMusicPlayer.numberOfLoops = 0
     backgroundMusicPlayer.prepareToPlay()
     backgroundMusicPlayer.play()
 }
