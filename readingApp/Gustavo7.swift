@@ -12,6 +12,8 @@ class Gustavo7: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+         playBackgroundMusic("4gustavo.wav")
+        
         let background = SKSpriteNode(imageNamed: "7Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -41,6 +43,7 @@ class Gustavo7: SKScene {
         let Scene = Gustavo3(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     
@@ -54,12 +57,14 @@ override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         var mainMenu = Gustavo8(size: self.size)
         var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
         mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+        backgroundMusicPlayer.stop()
         self.scene!.view?.presentScene(mainMenu, transition: transition)
         
     }   else if (node.name == "bridge") {
         var mainMenu = Gustavo10(size: self.size)
         var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
         mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+        backgroundMusicPlayer.stop()
         self.scene!.view?.presentScene(mainMenu, transition: transition)
         
     }

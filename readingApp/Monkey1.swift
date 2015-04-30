@@ -17,6 +17,8 @@ class Monkey1: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+        playBackgroundMusic("mattIntro.wav")
+        
         let background = SKSpriteNode(imageNamed: "1Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -28,6 +30,7 @@ class Monkey1: SKScene {
         let scene = Monkey2(size:self.size)
         scene.scaleMode = scaleMode
         let reveal = SKTransition.fadeWithDuration(3.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(scene, transition: reveal)
         
         startTime = currentTime

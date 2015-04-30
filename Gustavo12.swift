@@ -12,6 +12,8 @@ class Gustavo12: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+        playBackgroundMusic("9gustavo.wav")
+        
         let background = SKSpriteNode(imageNamed: "12Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -32,6 +34,7 @@ class Gustavo12: SKScene {
         let Scene = Gustavo13(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     
@@ -40,6 +43,7 @@ class Gustavo12: SKScene {
         let Scene = Gustavo11(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     

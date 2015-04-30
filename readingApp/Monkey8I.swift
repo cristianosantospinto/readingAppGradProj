@@ -12,6 +12,8 @@ class Monkey8I: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+        playBackgroundMusic("9mattFood.wav")
+        
         let background = SKSpriteNode(imageNamed: "10Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -54,12 +56,14 @@ class Monkey8I: SKScene {
             var mainMenu = Monkey9Is(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+            backgroundMusicPlayer.stop()
             self.scene!.view?.presentScene(mainMenu, transition: transition)
             
         }   else if (node.name == "pizza") {
             var mainMenu = Monkey9Ip(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+            backgroundMusicPlayer.stop()
             self.scene!.view?.presentScene(mainMenu, transition: transition)
             
         }

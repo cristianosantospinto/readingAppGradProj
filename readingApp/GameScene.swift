@@ -116,16 +116,18 @@ extension GameScene: BookObjectDelegate {       //extend bookObject?            
             let myScene = Gustavo1(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
-            self.view?.presentScene(myScene, transition: reveal)
             backgroundMusicPlayer.stop()
+            self.view?.presentScene(myScene, transition: reveal)
+            
             
         } else if (bookName == "bookTwo") {
             println(bookName)
             let myScene = Monkey1(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
-            self.view?.presentScene(myScene, transition: reveal)
             backgroundMusicPlayer.stop()
+            self.view?.presentScene(myScene, transition: reveal)
+            
             
         }
         

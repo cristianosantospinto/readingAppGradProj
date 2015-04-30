@@ -131,6 +131,37 @@
 		8893919A1AE6C52300613293 /* 1SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 889391971AE6C52300613293 /* 1SplashScreen.png */; };
 		8893919B1AE6C52300613293 /* animatingPlane.png in Resources */ = {isa = PBXBuildFile; fileRef = 889391981AE6C52300613293 /* animatingPlane.png */; };
 		8893919C1AE6C52300613293 /* SSanimating.png in Resources */ = {isa = PBXBuildFile; fileRef = 889391991AE6C52300613293 /* SSanimating.png */; };
+		88A521411AF11CD200C6244F /* 1gustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521221AF11CD200C6244F /* 1gustavo.wav */; };
+		88A521421AF11CD200C6244F /* 1matt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521231AF11CD200C6244F /* 1matt.wav */; };
+		88A521431AF11CD200C6244F /* 2gustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521241AF11CD200C6244F /* 2gustavo.wav */; };
+		88A521441AF11CD200C6244F /* 2matt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521251AF11CD200C6244F /* 2matt.wav */; };
+		88A521451AF11CD200C6244F /* 3gustavoBus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521261AF11CD200C6244F /* 3gustavoBus.wav */; };
+		88A521461AF11CD200C6244F /* 3gustavoTaxi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521271AF11CD200C6244F /* 3gustavoTaxi.wav */; };
+		88A521471AF11CD200C6244F /* 3gustavoTrain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521281AF11CD200C6244F /* 3gustavoTrain.wav */; };
+		88A521481AF11CD200C6244F /* 3matt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521291AF11CD200C6244F /* 3matt.wav */; };
+		88A521491AF11CD200C6244F /* 4gustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5212A1AF11CD200C6244F /* 4gustavo.wav */; };
+		88A5214A1AF11CD200C6244F /* 4matt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5212B1AF11CD200C6244F /* 4matt.wav */; };
+		88A5214B1AF11CD200C6244F /* 5gustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5212C1AF11CD200C6244F /* 5gustavo.wav */; };
+		88A5214C1AF11CD200C6244F /* 5mattColloseum.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5212D1AF11CD200C6244F /* 5mattColloseum.wav */; };
+		88A5214D1AF11CD200C6244F /* 5mattEiffel.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5212E1AF11CD200C6244F /* 5mattEiffel.wav */; };
+		88A5214E1AF11CD200C6244F /* 6gustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5212F1AF11CD200C6244F /* 6gustavo.wav */; };
+		88A5214F1AF11CD200C6244F /* 6matt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521301AF11CD200C6244F /* 6matt.wav */; };
+		88A521501AF11CD200C6244F /* 7gustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521311AF11CD200C6244F /* 7gustavo.wav */; };
+		88A521511AF11CD200C6244F /* 7matt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521321AF11CD200C6244F /* 7matt.wav */; };
+		88A521521AF11CD200C6244F /* 8gustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521331AF11CD200C6244F /* 8gustavo.wav */; };
+		88A521531AF11CD200C6244F /* 8mattBaguette.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521341AF11CD200C6244F /* 8mattBaguette.wav */; };
+		88A521541AF11CD200C6244F /* 8mattCroissant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521351AF11CD200C6244F /* 8mattCroissant.wav */; };
+		88A521551AF11CD200C6244F /* 9gustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521361AF11CD200C6244F /* 9gustavo.wav */; };
+		88A521561AF11CD200C6244F /* 9mattItalyFood.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521371AF11CD200C6244F /* 9mattItalyFood.wav */; };
+		88A521571AF11CD200C6244F /* 10gustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521381AF11CD200C6244F /* 10gustavo.wav */; };
+		88A521581AF11CD200C6244F /* 10mattPizza.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521391AF11CD200C6244F /* 10mattPizza.wav */; };
+		88A521591AF11CD200C6244F /* 10mattSpaghetti.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5213A1AF11CD200C6244F /* 10mattSpaghetti.wav */; };
+		88A5215A1AF11CD200C6244F /* 11mattSauce.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5213B1AF11CD200C6244F /* 11mattSauce.wav */; };
+		88A5215B1AF11CD200C6244F /* 12MattChocolate.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5213C1AF11CD200C6244F /* 12MattChocolate.wav */; };
+		88A5215C1AF11CD200C6244F /* 12mattStrawberry.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5213D1AF11CD200C6244F /* 12mattStrawberry.wav */; };
+		88A5215D1AF11CD200C6244F /* 13MattBed.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5213E1AF11CD200C6244F /* 13MattBed.wav */; };
+		88A5215E1AF11CD200C6244F /* gustavoIntro.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A5213F1AF11CD200C6244F /* gustavoIntro.wav */; };
+		88A5215F1AF11CD200C6244F /* mattIntro.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88A521401AF11CD200C6244F /* mattIntro.wav */; };
 		88AE43F01AC165F6005D2940 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AE43EF1AC165F6005D2940 /* Images.xcassets */; };
 		88D277B51AEA63100065E47D /* 3DV.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88D277B41AEA63100065E47D /* 3DV.wav */; };
 		88D5ED2B1AADB0D9008C88F1 /* BookObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */; };
@@ -275,6 +306,37 @@
 		889391971AE6C52300613293 /* 1SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1SplashScreen.png; sourceTree = SOURCE_ROOT; };
 		889391981AE6C52300613293 /* animatingPlane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animatingPlane.png; sourceTree = SOURCE_ROOT; };
 		889391991AE6C52300613293 /* SSanimating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSanimating.png; sourceTree = SOURCE_ROOT; };
+		88A521221AF11CD200C6244F /* 1gustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 1gustavo.wav; path = ../../ReadingApp/audio/1gustavo.wav; sourceTree = "<group>"; };
+		88A521231AF11CD200C6244F /* 1matt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 1matt.wav; path = ../../ReadingApp/audio/1matt.wav; sourceTree = "<group>"; };
+		88A521241AF11CD200C6244F /* 2gustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 2gustavo.wav; path = ../../ReadingApp/audio/2gustavo.wav; sourceTree = "<group>"; };
+		88A521251AF11CD200C6244F /* 2matt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 2matt.wav; path = ../../ReadingApp/audio/2matt.wav; sourceTree = "<group>"; };
+		88A521261AF11CD200C6244F /* 3gustavoBus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3gustavoBus.wav; path = ../../ReadingApp/audio/3gustavoBus.wav; sourceTree = "<group>"; };
+		88A521271AF11CD200C6244F /* 3gustavoTaxi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3gustavoTaxi.wav; path = ../../ReadingApp/audio/3gustavoTaxi.wav; sourceTree = "<group>"; };
+		88A521281AF11CD200C6244F /* 3gustavoTrain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3gustavoTrain.wav; path = ../../ReadingApp/audio/3gustavoTrain.wav; sourceTree = "<group>"; };
+		88A521291AF11CD200C6244F /* 3matt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3matt.wav; path = ../../ReadingApp/audio/3matt.wav; sourceTree = "<group>"; };
+		88A5212A1AF11CD200C6244F /* 4gustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 4gustavo.wav; path = ../../ReadingApp/audio/4gustavo.wav; sourceTree = "<group>"; };
+		88A5212B1AF11CD200C6244F /* 4matt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 4matt.wav; path = ../../ReadingApp/audio/4matt.wav; sourceTree = "<group>"; };
+		88A5212C1AF11CD200C6244F /* 5gustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 5gustavo.wav; path = ../../ReadingApp/audio/5gustavo.wav; sourceTree = "<group>"; };
+		88A5212D1AF11CD200C6244F /* 5mattColloseum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 5mattColloseum.wav; path = ../../ReadingApp/audio/5mattColloseum.wav; sourceTree = "<group>"; };
+		88A5212E1AF11CD200C6244F /* 5mattEiffel.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 5mattEiffel.wav; path = ../../ReadingApp/audio/5mattEiffel.wav; sourceTree = "<group>"; };
+		88A5212F1AF11CD200C6244F /* 6gustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 6gustavo.wav; path = ../../ReadingApp/audio/6gustavo.wav; sourceTree = "<group>"; };
+		88A521301AF11CD200C6244F /* 6matt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 6matt.wav; path = ../../ReadingApp/audio/6matt.wav; sourceTree = "<group>"; };
+		88A521311AF11CD200C6244F /* 7gustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 7gustavo.wav; path = ../../ReadingApp/audio/7gustavo.wav; sourceTree = "<group>"; };
+		88A521321AF11CD200C6244F /* 7matt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 7matt.wav; path = ../../ReadingApp/audio/7matt.wav; sourceTree = "<group>"; };
+		88A521331AF11CD200C6244F /* 8gustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 8gustavo.wav; path = ../../ReadingApp/audio/8gustavo.wav; sourceTree = "<group>"; };
+		88A521341AF11CD200C6244F /* 8mattBaguette.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 8mattBaguette.wav; path = ../../ReadingApp/audio/8mattBaguette.wav; sourceTree = "<group>"; };
+		88A521351AF11CD200C6244F /* 8mattCroissant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 8mattCroissant.wav; path = ../../ReadingApp/audio/8mattCroissant.wav; sourceTree = "<group>"; };
+		88A521361AF11CD200C6244F /* 9gustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 9gustavo.wav; path = ../../ReadingApp/audio/9gustavo.wav; sourceTree = "<group>"; };
+		88A521371AF11CD200C6244F /* 9mattItalyFood.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 9mattItalyFood.wav; path = ../../ReadingApp/audio/9mattItalyFood.wav; sourceTree = "<group>"; };
+		88A521381AF11CD200C6244F /* 10gustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 10gustavo.wav; path = ../../ReadingApp/audio/10gustavo.wav; sourceTree = "<group>"; };
+		88A521391AF11CD200C6244F /* 10mattPizza.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 10mattPizza.wav; path = ../../ReadingApp/audio/10mattPizza.wav; sourceTree = "<group>"; };
+		88A5213A1AF11CD200C6244F /* 10mattSpaghetti.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 10mattSpaghetti.wav; path = ../../ReadingApp/audio/10mattSpaghetti.wav; sourceTree = "<group>"; };
+		88A5213B1AF11CD200C6244F /* 11mattSauce.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 11mattSauce.wav; path = ../../ReadingApp/audio/11mattSauce.wav; sourceTree = "<group>"; };
+		88A5213C1AF11CD200C6244F /* 12MattChocolate.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 12MattChocolate.wav; path = ../../ReadingApp/audio/12MattChocolate.wav; sourceTree = "<group>"; };
+		88A5213D1AF11CD200C6244F /* 12mattStrawberry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 12mattStrawberry.wav; path = ../../ReadingApp/audio/12mattStrawberry.wav; sourceTree = "<group>"; };
+		88A5213E1AF11CD200C6244F /* 13MattBed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 13MattBed.wav; path = ../../ReadingApp/audio/13MattBed.wav; sourceTree = "<group>"; };
+		88A5213F1AF11CD200C6244F /* gustavoIntro.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = gustavoIntro.wav; path = ../../ReadingApp/audio/gustavoIntro.wav; sourceTree = "<group>"; };
+		88A521401AF11CD200C6244F /* mattIntro.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = mattIntro.wav; path = ../../ReadingApp/audio/mattIntro.wav; sourceTree = "<group>"; };
 		88AE43EF1AC165F6005D2940 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		88D277B41AEA63100065E47D /* 3DV.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3DV.wav; sourceTree = SOURCE_ROOT; };
 		88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookObject.swift; sourceTree = "<group>"; };
@@ -501,10 +563,6 @@
 				886A29671AB82DA000630B3B /* mainMenuButton.png */,
 				881E2F7A1AE93905002B19DC /* clickAny.png */,
 				881E2F7B1AE93905002B19DC /* YourDecisions.png */,
-				889391911AE69AEB00613293 /* bgMusic.wav */,
-				881E2F721AE8F192002B19DC /* 1DV.wav */,
-				881E2F741AE8FEE6002B19DC /* 2DV.wav */,
-				88D277B41AEA63100065E47D /* 3DV.wav */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -512,6 +570,7 @@
 		8871F00E1AAC48500065880F /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				88A521211AF11BAC00C6244F /* audio */,
 				88072C0A1ADFDEE500F2B856 /* MonkeyStory */,
 				88072C091ADFDEDC00F2B856 /* GustavoStory */,
 				88D5ED2A1AADB0D9008C88F1 /* BookObject.swift */,
@@ -521,6 +580,48 @@
 				889391931AE69C9300613293 /* Sound.swift */,
 			);
 			name = scenes;
+			sourceTree = "<group>";
+		};
+		88A521211AF11BAC00C6244F /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				88A521221AF11CD200C6244F /* 1gustavo.wav */,
+				88A521231AF11CD200C6244F /* 1matt.wav */,
+				88A521241AF11CD200C6244F /* 2gustavo.wav */,
+				88A521251AF11CD200C6244F /* 2matt.wav */,
+				88A521261AF11CD200C6244F /* 3gustavoBus.wav */,
+				88A521271AF11CD200C6244F /* 3gustavoTaxi.wav */,
+				88A521281AF11CD200C6244F /* 3gustavoTrain.wav */,
+				88A521291AF11CD200C6244F /* 3matt.wav */,
+				88A5212A1AF11CD200C6244F /* 4gustavo.wav */,
+				88A5212B1AF11CD200C6244F /* 4matt.wav */,
+				88A5212C1AF11CD200C6244F /* 5gustavo.wav */,
+				88A5212D1AF11CD200C6244F /* 5mattColloseum.wav */,
+				88A5212E1AF11CD200C6244F /* 5mattEiffel.wav */,
+				88A5212F1AF11CD200C6244F /* 6gustavo.wav */,
+				88A521301AF11CD200C6244F /* 6matt.wav */,
+				88A521311AF11CD200C6244F /* 7gustavo.wav */,
+				88A521321AF11CD200C6244F /* 7matt.wav */,
+				88A521331AF11CD200C6244F /* 8gustavo.wav */,
+				88A521341AF11CD200C6244F /* 8mattBaguette.wav */,
+				88A521351AF11CD200C6244F /* 8mattCroissant.wav */,
+				88A521361AF11CD200C6244F /* 9gustavo.wav */,
+				88A521371AF11CD200C6244F /* 9mattItalyFood.wav */,
+				88A521381AF11CD200C6244F /* 10gustavo.wav */,
+				88A521391AF11CD200C6244F /* 10mattPizza.wav */,
+				88A5213A1AF11CD200C6244F /* 10mattSpaghetti.wav */,
+				88A5213B1AF11CD200C6244F /* 11mattSauce.wav */,
+				88A5213C1AF11CD200C6244F /* 12MattChocolate.wav */,
+				88A5213D1AF11CD200C6244F /* 12mattStrawberry.wav */,
+				88A5213E1AF11CD200C6244F /* 13MattBed.wav */,
+				88A5213F1AF11CD200C6244F /* gustavoIntro.wav */,
+				88A521401AF11CD200C6244F /* mattIntro.wav */,
+				889391911AE69AEB00613293 /* bgMusic.wav */,
+				881E2F721AE8F192002B19DC /* 1DV.wav */,
+				881E2F741AE8FEE6002B19DC /* 2DV.wav */,
+				88D277B41AEA63100065E47D /* 3DV.wav */,
+			);
+			name = audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -613,17 +714,23 @@
 				88072C5C1AE10F9300F2B856 /* 14.3Monkey.png in Resources */,
 				88072C521AE10F9300F2B856 /* 12.2Monkey.png in Resources */,
 				886A29691AB82DA000630B3B /* mainMenuButton.png in Resources */,
+				88A521591AF11CD200C6244F /* 10mattSpaghetti.wav in Resources */,
+				88A521491AF11CD200C6244F /* 4gustavo.wav in Resources */,
 				88072C561AE10F9300F2B856 /* 13.2Monkey.png in Resources */,
 				88072BDD1ADFDE6F00F2B856 /* colloseum.png in Resources */,
 				88072C031ADFDE8100F2B856 /* 14Gustavo.png in Resources */,
 				8872DF301AE2E4890098BA3B /* MonkeyRetry.png in Resources */,
+				88A521451AF11CD200C6244F /* 3gustavoBus.wav in Resources */,
 				88072C5E1AE10F9300F2B856 /* 14.4Monkey.png in Resources */,
+				88A5215C1AF11CD200C6244F /* 12mattStrawberry.wav in Resources */,
 				88072C081ADFDE8100F2B856 /* train.png in Resources */,
 				88072BF71ADFDE8100F2B856 /* 2Gustavo.png in Resources */,
 				88072BE11ADFDE6F00F2B856 /* spaghetti.png in Resources */,
+				88A5214D1AF11CD200C6244F /* 5mattEiffel.wav in Resources */,
 				88072BFE1ADFDE8100F2B856 /* 9Gustavo.png in Resources */,
 				88072BDB1ADFDE6F00F2B856 /* baguette.png in Resources */,
 				884E73851AAC6777009A2FDB /* LaunchScreen.xib in Resources */,
+				88A521571AF11CD200C6244F /* 10gustavo.wav in Resources */,
 				88072BFA1ADFDE8100F2B856 /* 5Gustavo.png in Resources */,
 				889391921AE69AEB00613293 /* bgMusic.wav in Resources */,
 				88072C631AE10FB900F2B856 /* 10Monkey.png in Resources */,
@@ -633,6 +740,10 @@
 				88072BE01ADFDE6F00F2B856 /* pizza.png in Resources */,
 				88072C5F1AE10F9300F2B856 /* 15Monkey.png in Resources */,
 				88072C051ADFDE8100F2B856 /* bus.png in Resources */,
+				88A5215B1AF11CD200C6244F /* 12MattChocolate.wav in Resources */,
+				88A5215E1AF11CD200C6244F /* gustavoIntro.wav in Resources */,
+				88A5214A1AF11CD200C6244F /* 4matt.wav in Resources */,
+				88A5214E1AF11CD200C6244F /* 6gustavo.wav in Resources */,
 				88072C461AE10F9300F2B856 /* 1Monkey.png in Resources */,
 				881E2F731AE8F192002B19DC /* 1DV.wav in Resources */,
 				88072BDE1ADFDE6F00F2B856 /* croissant.png in Resources */,
@@ -643,42 +754,63 @@
 				88072C4A1AE10F9300F2B856 /* 5Monkey.png in Resources */,
 				88072BF81ADFDE8100F2B856 /* 3Gustavo.png in Resources */,
 				88072C4B1AE10F9300F2B856 /* 6Monkey.png in Resources */,
+				88A521531AF11CD200C6244F /* 8mattBaguette.wav in Resources */,
 				8872DF2B1AE2E4770098BA3B /* GustavoHome.png in Resources */,
 				88072C4C1AE10F9300F2B856 /* 7Monkey.png in Resources */,
 				8893919C1AE6C52300613293 /* SSanimating.png in Resources */,
 				881E2F751AE8FEE6002B19DC /* 2DV.wav in Resources */,
 				88072BFC1ADFDE8100F2B856 /* 7Gustavo.png in Resources */,
+				88A5215F1AF11CD200C6244F /* mattIntro.wav in Resources */,
 				88072C571AE10F9300F2B856 /* 13.3Monkey.png in Resources */,
 				88072C001ADFDE8100F2B856 /* 11Gustavo.png in Resources */,
 				88072C601AE10F9300F2B856 /* 16Monkey.png in Resources */,
+				88A521421AF11CD200C6244F /* 1matt.wav in Resources */,
 				881E2F7D1AE93905002B19DC /* YourDecisions.png in Resources */,
+				88A521411AF11CD200C6244F /* 1gustavo.wav in Resources */,
 				88072BDC1ADFDE6F00F2B856 /* chocolate.png in Resources */,
+				88A5214B1AF11CD200C6244F /* 5gustavo.wav in Resources */,
+				88A521431AF11CD200C6244F /* 2gustavo.wav in Resources */,
+				88A521541AF11CD200C6244F /* 8mattCroissant.wav in Resources */,
+				88A5215D1AF11CD200C6244F /* 13MattBed.wav in Resources */,
+				88A521501AF11CD200C6244F /* 7gustavo.wav in Resources */,
 				88072BA11ADFDE0100F2B856 /* scrollingBg1.png in Resources */,
 				881E2F7C1AE93905002B19DC /* clickAny.png in Resources */,
 				88072C5A1AE10F9300F2B856 /* 14.1Monkey.png in Resources */,
 				88072C4E1AE10F9300F2B856 /* 9Monkey.png in Resources */,
 				88072C5B1AE10F9300F2B856 /* 14.2Monkey.png in Resources */,
+				88A521511AF11CD200C6244F /* 7matt.wav in Resources */,
 				8872DF2F1AE2E4890098BA3B /* MonkeyHome.png in Resources */,
 				8872DF2C1AE2E4770098BA3B /* GustavoRetry.png in Resources */,
 				88072BDF1ADFDE6F00F2B856 /* eiffel.png in Resources */,
 				88AE43F01AC165F6005D2940 /* Images.xcassets in Resources */,
+				88A521481AF11CD200C6244F /* 3matt.wav in Resources */,
 				88072C531AE10F9300F2B856 /* 12.3Monkey.png in Resources */,
+				88A521471AF11CD200C6244F /* 3gustavoTrain.wav in Resources */,
+				88A521441AF11CD200C6244F /* 2matt.wav in Resources */,
 				88072C471AE10F9300F2B856 /* 2Monkey.png in Resources */,
 				88072C491AE10F9300F2B856 /* 4Monkey.png in Resources */,
 				88072BFB1ADFDE8100F2B856 /* 6Gustavo.png in Resources */,
+				88A5214C1AF11CD200C6244F /* 5mattColloseum.wav in Resources */,
 				88072C041ADFDE8100F2B856 /* bridge.png in Resources */,
 				88072C071ADFDE8100F2B856 /* taxi.png in Resources */,
+				88A5214F1AF11CD200C6244F /* 6matt.wav in Resources */,
 				88072C641AE10FB900F2B856 /* 11Monkey.png in Resources */,
 				88072BA21ADFDE0100F2B856 /* scrollingBg2.png in Resources */,
 				88072BF91ADFDE8100F2B856 /* 4Gustavo.png in Resources */,
+				88A5215A1AF11CD200C6244F /* 11mattSauce.wav in Resources */,
 				88072B9E1ADFDE0100F2B856 /* GustavoBook.png in Resources */,
 				88072C011ADFDE8100F2B856 /* 12Gustavo.png in Resources */,
+				88A521461AF11CD200C6244F /* 3gustavoTaxi.wav in Resources */,
+				88A521561AF11CD200C6244F /* 9mattItalyFood.wav in Resources */,
 				88072B9C1ADFDE0100F2B856 /* appCloud1.png in Resources */,
+				88A521521AF11CD200C6244F /* 8gustavo.wav in Resources */,
+				88A521551AF11CD200C6244F /* 9gustavo.wav in Resources */,
 				88072BF61ADFDE8100F2B856 /* 1Gustavo.png in Resources */,
 				8856D37D1AAB8EAF00D92C79 /* Main.storyboard in Resources */,
 				88072B9F1ADFDE0100F2B856 /* MonkeyBook.png in Resources */,
 				8893919A1AE6C52300613293 /* 1SplashScreen.png in Resources */,
 				8893919B1AE6C52300613293 /* animatingPlane.png in Resources */,
+				88A521581AF11CD200C6244F /* 10mattPizza.wav in Resources */,
 				88072C511AE10F9300F2B856 /* 12.1Monkey.png in Resources */,
 				88072C021ADFDE8100F2B856 /* 13Gustavo.png in Resources */,
 			);

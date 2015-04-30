@@ -11,6 +11,8 @@ class Monkey9Fb: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+         playBackgroundMusic("8mattBaguette.wav")
+        
         let background = SKSpriteNode(imageNamed: "12.3Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -31,6 +33,7 @@ class Monkey9Fb: SKScene {
         let Scene = Monkey10F(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     
@@ -39,6 +42,7 @@ class Monkey9Fb: SKScene {
         let Scene = Monkey8F(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     

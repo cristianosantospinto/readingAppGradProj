@@ -10,7 +10,10 @@ import SpriteKit
 
 class Gustavo2: SKScene {
     
+    
     override func didMoveToView(view: SKView) {
+        
+        playBackgroundMusic("1gustavo.wav")
         
         let background = SKSpriteNode(imageNamed: "2Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
@@ -32,6 +35,7 @@ class Gustavo2: SKScene {
         let Scene = Gustavo3(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     
@@ -40,6 +44,7 @@ class Gustavo2: SKScene {
         let Scene = Gustavo1(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.fadeWithDuration(1.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     

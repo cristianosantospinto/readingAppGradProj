@@ -12,6 +12,8 @@ class Monkey2: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+        playBackgroundMusic("1matt.wav")
+        
         let background = SKSpriteNode(imageNamed: "2Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -41,6 +43,7 @@ class Monkey2: SKScene {
         let Scene = Monkey1(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     
@@ -54,12 +57,14 @@ class Monkey2: SKScene {
             var mainMenu = Monkey3F(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+            backgroundMusicPlayer.stop()
             self.scene!.view?.presentScene(mainMenu, transition: transition)
             
         }   else if (node.name == "colloseum") {
             var mainMenu = Monkey3I(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+            backgroundMusicPlayer.stop()
             self.scene!.view?.presentScene(mainMenu, transition: transition)
             
         }

@@ -12,6 +12,8 @@ class Gustavo9: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+        playBackgroundMusic("6gustavo.wav")
+        
         let background = SKSpriteNode(imageNamed: "9Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)

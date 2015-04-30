@@ -12,6 +12,8 @@ class Gustavo3: SKScene {
     
     override func didMoveToView(view: SKView) {
         
+        playBackgroundMusic("2gustavo.wav")
+        
         let background = SKSpriteNode(imageNamed: "3Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -44,6 +46,7 @@ class Gustavo3: SKScene {
         let Scene = Gustavo2(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
+        backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     
@@ -57,6 +60,7 @@ class Gustavo3: SKScene {
             var mainMenu = Gustavo4(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+            backgroundMusicPlayer.stop()
             self.scene!.view?.presentScene(mainMenu, transition: transition)
     
         
@@ -64,12 +68,14 @@ class Gustavo3: SKScene {
                 var mainMenu = Gustavo6(size: self.size)
                 var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
                 mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+                backgroundMusicPlayer.stop()
                 self.scene!.view?.presentScene(mainMenu, transition: transition)
             
         }   else if (node.name == "bus") {
             var mainMenu = Gustavo5(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+            backgroundMusicPlayer.stop()
             self.scene!.view?.presentScene(mainMenu, transition: transition)
     }
 
