@@ -58,7 +58,7 @@ class Gustavo10: SKScene {
         var node = self.nodeAtPoint(location)
         
         if (node.name == "boat1") {
-            sfx("train.wav")
+            sfx("boat.wav")
             var mainMenu = Gustavo11(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 2.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
@@ -67,7 +67,7 @@ class Gustavo10: SKScene {
             
             
         }   else if (node.name == "boat2") {
-            sfx("horn.wav")
+            sfx("boat.wav")
             var mainMenu = Gustavo11(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 2.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill

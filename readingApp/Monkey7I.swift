@@ -66,7 +66,7 @@ class Monkey7I: SKScene {
             
             
         }   else if (node.name == "cam") {
-            sfx("")
+            sfx("camera.wav")
             
             
         }

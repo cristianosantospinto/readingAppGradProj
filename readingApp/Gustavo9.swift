@@ -33,12 +33,12 @@ class Gustavo9: SKScene {
         
         let george = SKSpriteNode(imageNamed: "9george")
         george.position = CGPoint(x: size.width/2 - 530, y: size.height/2 + 70)
-        george.name = "8george"
+        george.name = "9george"
         addChild(george)
         
         let boy1 = SKSpriteNode(imageNamed: "9boy")
         boy1.position = CGPoint(x: size.width/2 + 340, y: size.height/2 + 50)
-        boy1.name = "8boy1"
+        boy1.name = "9boy"
         addChild(boy1)
         
         let boy2 = SKSpriteNode(imageNamed: "9boy2")
@@ -75,16 +75,24 @@ class Gustavo9: SKScene {
         var location = touch!.locationInNode(self)
         var node = self.nodeAtPoint(location)
         
-        if (node.name == "2gus") {
-            sfx("train.wav")
+        if (node.name == "9gus") {
+            sfx("gustavo.wav")
+            
+        }   else if (node.name == "9george") {
+            sfx("yay2.wav")
             
             
-        }   else if (node.name == "") {
-            sfx("")
+        }   else if (node.name == "9boy") {
+            sfx("yay.wav")
             
+            
+        }    else if (node.name == "9boy2") {
+            sfx("ohMan.wav")
+            
+        }   else if (node.name == "9boy3") {
+            sfx("ohMan2.wav")
             
         }
-    
-    
+    }
     
 }

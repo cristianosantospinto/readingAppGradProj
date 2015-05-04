@@ -60,7 +60,7 @@ class Gustavo2: SKScene {
         var node = self.nodeAtPoint(location)
         
         if (node.name == "2gus") {
-            sfx("train.wav")
+            sfx("hiGustavo.wav")
             
             
         }   else if (node.name == "") {

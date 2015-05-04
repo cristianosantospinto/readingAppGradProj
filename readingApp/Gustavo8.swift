@@ -70,17 +70,23 @@ class Gustavo8: SKScene {
         var location = touch!.locationInNode(self)
         var node = self.nodeAtPoint(location)
         
-        if (node.name == "2gus") {
-            sfx("train.wav")
+        if (node.name == "8gus") {
+            sfx("gustavo.wav")
             
             
-        }   else if (node.name == "") {
-            sfx("")
+        }   else if (node.name == "8boy1") {
+            sfx("kid1.wav")
             
+            
+        }    else if (node.name == "8boy2") {
+            sfx("kid2.wav")
+            
+        }   else if (node.name == "8boy3") {
+            sfx("kid3.wav")
             
         }
     
     
-    
-}
+    }
 
+}

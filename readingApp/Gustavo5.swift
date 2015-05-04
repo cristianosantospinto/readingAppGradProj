@@ -64,11 +64,11 @@ class Gustavo5: SKScene {
         var node = self.nodeAtPoint(location)
     
         if (node.name == "5gus") {
-            sfx("train.wav")
+            sfx("gustavo.wav")
             
             
-        }   else if (node.name == "") {
-            sfx("")
+        }   else if (node.name == "stop") {
+            sfx("bell.wav")
             
 
  

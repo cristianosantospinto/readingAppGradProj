@@ -88,9 +88,6 @@
 		881E2F7D1AE93905002B19DC /* YourDecisions.png in Resources */ = {isa = PBXBuildFile; fileRef = 881E2F7B1AE93905002B19DC /* YourDecisions.png */; };
 		882D2B051AF22BDA004A5E6C /* Monkey11Fc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D2B041AF22BDA004A5E6C /* Monkey11Fc.swift */; };
 		884913341AF3600C00673D33 /* sfx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884913331AF3600C00673D33 /* sfx.swift */; };
-		884913361AF3609100673D33 /* bus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 884913351AF3609100673D33 /* bus.wav */; };
-		884913391AF365E900673D33 /* horn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 884913371AF365E900673D33 /* horn.wav */; };
-		8849133A1AF365E900673D33 /* train.wav in Resources */ = {isa = PBXBuildFile; fileRef = 884913381AF365E900673D33 /* train.wav */; };
 		884E73851AAC6777009A2FDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884E73841AAC6777009A2FDB /* LaunchScreen.xib */; };
 		8853AB131AE52F700084775B /* SpriteKit+Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8853AB121AE52F700084775B /* SpriteKit+Spring.swift */; };
 		88563FB41AF75866001F1472 /* 3clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 88563FAC1AF75866001F1472 /* 3clock.png */; };
@@ -113,6 +110,31 @@
 		8872DF2C1AE2E4770098BA3B /* GustavoRetry.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872DF2A1AE2E4770098BA3B /* GustavoRetry.png */; };
 		8872DF2F1AE2E4890098BA3B /* MonkeyHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872DF2D1AE2E4890098BA3B /* MonkeyHome.png */; };
 		8872DF301AE2E4890098BA3B /* MonkeyRetry.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872DF2E1AE2E4890098BA3B /* MonkeyRetry.png */; };
+		88774F3D1AF7B01500D8205D /* alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F241AF7B01500D8205D /* alarm.wav */; };
+		88774F3E1AF7B01500D8205D /* bell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F251AF7B01500D8205D /* bell.wav */; };
+		88774F3F1AF7B01500D8205D /* birds.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F261AF7B01500D8205D /* birds.wav */; };
+		88774F401AF7B01500D8205D /* boat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F271AF7B01500D8205D /* boat.wav */; };
+		88774F411AF7B01500D8205D /* bus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F281AF7B01500D8205D /* bus.wav */; };
+		88774F421AF7B01500D8205D /* camera.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F291AF7B01500D8205D /* camera.wav */; };
+		88774F431AF7B01500D8205D /* churchBells.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F2A1AF7B01500D8205D /* churchBells.wav */; };
+		88774F441AF7B01500D8205D /* circus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F2B1AF7B01500D8205D /* circus.wav */; };
+		88774F451AF7B01500D8205D /* clockTower.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F2C1AF7B01500D8205D /* clockTower.wav */; };
+		88774F461AF7B01500D8205D /* gustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F2D1AF7B01500D8205D /* gustavo.wav */; };
+		88774F471AF7B01500D8205D /* hiGustavo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F2E1AF7B01500D8205D /* hiGustavo.wav */; };
+		88774F481AF7B01500D8205D /* horn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F2F1AF7B01500D8205D /* horn.wav */; };
+		88774F491AF7B01500D8205D /* kid1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F301AF7B01500D8205D /* kid1.wav */; };
+		88774F4A1AF7B01500D8205D /* kid2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F311AF7B01500D8205D /* kid2.wav */; };
+		88774F4B1AF7B01500D8205D /* kid3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F321AF7B01500D8205D /* kid3.wav */; };
+		88774F4C1AF7B01500D8205D /* ohMan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F331AF7B01500D8205D /* ohMan.wav */; };
+		88774F4D1AF7B01500D8205D /* ohMan2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F341AF7B01500D8205D /* ohMan2.wav */; };
+		88774F4E1AF7B01500D8205D /* sarah.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F351AF7B01500D8205D /* sarah.wav */; };
+		88774F4F1AF7B01500D8205D /* train.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F361AF7B01500D8205D /* train.wav */; };
+		88774F501AF7B01500D8205D /* yawn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F371AF7B01500D8205D /* yawn.wav */; };
+		88774F511AF7B01500D8205D /* yawn2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F381AF7B01500D8205D /* yawn2.wav */; };
+		88774F521AF7B01500D8205D /* yay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F391AF7B01500D8205D /* yay.wav */; };
+		88774F531AF7B01500D8205D /* yay2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F3A1AF7B01500D8205D /* yay2.wav */; };
+		88774F541AF7B01500D8205D /* yum.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F3B1AF7B01500D8205D /* yum.wav */; };
+		88774F551AF7B01500D8205D /* yum2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88774F3C1AF7B01500D8205D /* yum2.wav */; };
 		887810981AF65DE500946876 /* boat1.png in Resources */ = {isa = PBXBuildFile; fileRef = 887810961AF65DE500946876 /* boat1.png */; };
 		887810991AF65DE500946876 /* boat2.png in Resources */ = {isa = PBXBuildFile; fileRef = 887810971AF65DE500946876 /* boat2.png */; };
 		887810AE1AF65E0D00946876 /* 2gus.png in Resources */ = {isa = PBXBuildFile; fileRef = 8878109A1AF65E0D00946876 /* 2gus.png */; };
@@ -293,9 +315,6 @@
 		881E2F7B1AE93905002B19DC /* YourDecisions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YourDecisions.png; path = images/YourDecisions.png; sourceTree = SOURCE_ROOT; };
 		882D2B041AF22BDA004A5E6C /* Monkey11Fc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monkey11Fc.swift; sourceTree = "<group>"; };
 		884913331AF3600C00673D33 /* sfx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sfx.swift; sourceTree = "<group>"; };
-		884913351AF3609100673D33 /* bus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bus.wav; path = ../../sfx/bus.wav; sourceTree = "<group>"; };
-		884913371AF365E900673D33 /* horn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = horn.wav; path = ../../sfx/horn.wav; sourceTree = "<group>"; };
-		884913381AF365E900673D33 /* train.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = train.wav; path = ../../sfx/train.wav; sourceTree = "<group>"; };
 		884E73841AAC6777009A2FDB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8853AB121AE52F700084775B /* SpriteKit+Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpriteKit+Spring.swift"; sourceTree = SOURCE_ROOT; };
 		88563FAC1AF75866001F1472 /* 3clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3clock.png; path = ../../ReadingApp/images/Monkey/3clock.png; sourceTree = "<group>"; };
@@ -322,6 +341,31 @@
 		8872DF2A1AE2E4770098BA3B /* GustavoRetry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GustavoRetry.png; path = images/Gustavo/GustavoRetry.png; sourceTree = SOURCE_ROOT; };
 		8872DF2D1AE2E4890098BA3B /* MonkeyHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MonkeyHome.png; path = images/Monkey/MonkeyHome.png; sourceTree = SOURCE_ROOT; };
 		8872DF2E1AE2E4890098BA3B /* MonkeyRetry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MonkeyRetry.png; path = images/Monkey/MonkeyRetry.png; sourceTree = SOURCE_ROOT; };
+		88774F241AF7B01500D8205D /* alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = alarm.wav; path = ../../ReadingApp/audio/sfx/alarm.wav; sourceTree = "<group>"; };
+		88774F251AF7B01500D8205D /* bell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bell.wav; path = ../../ReadingApp/audio/sfx/bell.wav; sourceTree = "<group>"; };
+		88774F261AF7B01500D8205D /* birds.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = birds.wav; path = ../../ReadingApp/audio/sfx/birds.wav; sourceTree = "<group>"; };
+		88774F271AF7B01500D8205D /* boat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = boat.wav; path = ../../ReadingApp/audio/sfx/boat.wav; sourceTree = "<group>"; };
+		88774F281AF7B01500D8205D /* bus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bus.wav; path = ../../ReadingApp/audio/sfx/bus.wav; sourceTree = "<group>"; };
+		88774F291AF7B01500D8205D /* camera.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = camera.wav; path = ../../ReadingApp/audio/sfx/camera.wav; sourceTree = "<group>"; };
+		88774F2A1AF7B01500D8205D /* churchBells.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = churchBells.wav; path = ../../ReadingApp/audio/sfx/churchBells.wav; sourceTree = "<group>"; };
+		88774F2B1AF7B01500D8205D /* circus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = circus.wav; path = ../../ReadingApp/audio/sfx/circus.wav; sourceTree = "<group>"; };
+		88774F2C1AF7B01500D8205D /* clockTower.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = clockTower.wav; path = ../../ReadingApp/audio/sfx/clockTower.wav; sourceTree = "<group>"; };
+		88774F2D1AF7B01500D8205D /* gustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = gustavo.wav; path = ../../ReadingApp/audio/sfx/gustavo.wav; sourceTree = "<group>"; };
+		88774F2E1AF7B01500D8205D /* hiGustavo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hiGustavo.wav; path = ../../ReadingApp/audio/sfx/hiGustavo.wav; sourceTree = "<group>"; };
+		88774F2F1AF7B01500D8205D /* horn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = horn.wav; path = ../../ReadingApp/audio/sfx/horn.wav; sourceTree = "<group>"; };
+		88774F301AF7B01500D8205D /* kid1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kid1.wav; path = ../../ReadingApp/audio/sfx/kid1.wav; sourceTree = "<group>"; };
+		88774F311AF7B01500D8205D /* kid2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kid2.wav; path = ../../ReadingApp/audio/sfx/kid2.wav; sourceTree = "<group>"; };
+		88774F321AF7B01500D8205D /* kid3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kid3.wav; path = ../../ReadingApp/audio/sfx/kid3.wav; sourceTree = "<group>"; };
+		88774F331AF7B01500D8205D /* ohMan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ohMan.wav; path = ../../ReadingApp/audio/sfx/ohMan.wav; sourceTree = "<group>"; };
+		88774F341AF7B01500D8205D /* ohMan2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ohMan2.wav; path = ../../ReadingApp/audio/sfx/ohMan2.wav; sourceTree = "<group>"; };
+		88774F351AF7B01500D8205D /* sarah.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sarah.wav; path = ../../ReadingApp/audio/sfx/sarah.wav; sourceTree = "<group>"; };
+		88774F361AF7B01500D8205D /* train.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = train.wav; path = ../../ReadingApp/audio/sfx/train.wav; sourceTree = "<group>"; };
+		88774F371AF7B01500D8205D /* yawn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = yawn.wav; path = ../../ReadingApp/audio/sfx/yawn.wav; sourceTree = "<group>"; };
+		88774F381AF7B01500D8205D /* yawn2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = yawn2.wav; path = ../../ReadingApp/audio/sfx/yawn2.wav; sourceTree = "<group>"; };
+		88774F391AF7B01500D8205D /* yay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = yay.wav; path = ../../ReadingApp/audio/sfx/yay.wav; sourceTree = "<group>"; };
+		88774F3A1AF7B01500D8205D /* yay2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = yay2.wav; path = ../../ReadingApp/audio/sfx/yay2.wav; sourceTree = "<group>"; };
+		88774F3B1AF7B01500D8205D /* yum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = yum.wav; path = ../../ReadingApp/audio/sfx/yum.wav; sourceTree = "<group>"; };
+		88774F3C1AF7B01500D8205D /* yum2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = yum2.wav; path = ../../ReadingApp/audio/sfx/yum2.wav; sourceTree = "<group>"; };
 		887810961AF65DE500946876 /* boat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boat1.png; path = ../../ReadingApp/images/Gustavo/boat1.png; sourceTree = "<group>"; };
 		887810971AF65DE500946876 /* boat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boat2.png; path = ../../ReadingApp/images/Gustavo/boat2.png; sourceTree = "<group>"; };
 		8878109A1AF65E0D00946876 /* 2gus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2gus.png; path = ../../ReadingApp/images/Gustavo/2gus.png; sourceTree = "<group>"; };
@@ -665,12 +709,42 @@
 				8856D3971AAB8F0800D92C79 /* SplashScreen.swift */,
 				8853AB121AE52F700084775B /* SpriteKit+Spring.swift */,
 				889391931AE69C9300613293 /* Sound.swift */,
-				884913371AF365E900673D33 /* horn.wav */,
-				884913381AF365E900673D33 /* train.wav */,
-				884913351AF3609100673D33 /* bus.wav */,
 				884913331AF3600C00673D33 /* sfx.swift */,
+				88774F231AF7B00300D8205D /* sfx */,
 			);
 			name = scenes;
+			sourceTree = "<group>";
+		};
+		88774F231AF7B00300D8205D /* sfx */ = {
+			isa = PBXGroup;
+			children = (
+				88774F241AF7B01500D8205D /* alarm.wav */,
+				88774F251AF7B01500D8205D /* bell.wav */,
+				88774F261AF7B01500D8205D /* birds.wav */,
+				88774F271AF7B01500D8205D /* boat.wav */,
+				88774F281AF7B01500D8205D /* bus.wav */,
+				88774F291AF7B01500D8205D /* camera.wav */,
+				88774F2A1AF7B01500D8205D /* churchBells.wav */,
+				88774F2B1AF7B01500D8205D /* circus.wav */,
+				88774F2C1AF7B01500D8205D /* clockTower.wav */,
+				88774F2D1AF7B01500D8205D /* gustavo.wav */,
+				88774F2E1AF7B01500D8205D /* hiGustavo.wav */,
+				88774F2F1AF7B01500D8205D /* horn.wav */,
+				88774F301AF7B01500D8205D /* kid1.wav */,
+				88774F311AF7B01500D8205D /* kid2.wav */,
+				88774F321AF7B01500D8205D /* kid3.wav */,
+				88774F331AF7B01500D8205D /* ohMan.wav */,
+				88774F341AF7B01500D8205D /* ohMan2.wav */,
+				88774F351AF7B01500D8205D /* sarah.wav */,
+				88774F361AF7B01500D8205D /* train.wav */,
+				88774F371AF7B01500D8205D /* yawn.wav */,
+				88774F381AF7B01500D8205D /* yawn2.wav */,
+				88774F391AF7B01500D8205D /* yay.wav */,
+				88774F3A1AF7B01500D8205D /* yay2.wav */,
+				88774F3B1AF7B01500D8205D /* yum.wav */,
+				88774F3C1AF7B01500D8205D /* yum2.wav */,
+			);
+			name = sfx;
 			sourceTree = "<group>";
 		};
 		887810951AF65DC300946876 /* sfx */ = {
@@ -829,6 +903,7 @@
 				88072C481AE10F9300F2B856 /* 3Monkey.png in Resources */,
 				88072C551AE10F9300F2B856 /* 13.1Monkey.png in Resources */,
 				88072B9D1ADFDE0100F2B856 /* appCloud2.png in Resources */,
+				88774F4B1AF7B01500D8205D /* kid3.wav in Resources */,
 				88D277B51AEA63100065E47D /* 3DV.wav in Resources */,
 				88072C5C1AE10F9300F2B856 /* 14.3Monkey.png in Resources */,
 				88072C521AE10F9300F2B856 /* 12.2Monkey.png in Resources */,
@@ -837,8 +912,10 @@
 				887810BB1AF65E0D00946876 /* 13.png in Resources */,
 				887810B11AF65E0D00946876 /* 6gus.png in Resources */,
 				88A521591AF11CD200C6244F /* 10mattSpaghetti.wav in Resources */,
+				88774F451AF7B01500D8205D /* clockTower.wav in Resources */,
 				88A521491AF11CD200C6244F /* 4gustavo.wav in Resources */,
 				88072C561AE10F9300F2B856 /* 13.2Monkey.png in Resources */,
+				88774F3D1AF7B01500D8205D /* alarm.wav in Resources */,
 				88072BDD1ADFDE6F00F2B856 /* colloseum.png in Resources */,
 				88072C031ADFDE8100F2B856 /* 14Gustavo.png in Resources */,
 				8872DF301AE2E4890098BA3B /* MonkeyRetry.png in Resources */,
@@ -847,6 +924,8 @@
 				887810B21AF65E0D00946876 /* 8boy1.png in Resources */,
 				88072C5E1AE10F9300F2B856 /* 14.4Monkey.png in Resources */,
 				887810B71AF65E0D00946876 /* 9boy2.png in Resources */,
+				88774F501AF7B01500D8205D /* yawn.wav in Resources */,
+				88774F531AF7B01500D8205D /* yay2.wav in Resources */,
 				88A5215C1AF11CD200C6244F /* 12mattStrawberry.wav in Resources */,
 				88072C081ADFDE8100F2B856 /* train.png in Resources */,
 				88072BF71ADFDE8100F2B856 /* 2Gustavo.png in Resources */,
@@ -880,34 +959,42 @@
 				88072C541AE10F9300F2B856 /* 12.4Monkey.png in Resources */,
 				88072BFF1ADFDE8100F2B856 /* 10Gustavo.png in Resources */,
 				88072C2A1ADFEE7C00F2B856 /* SplashScreen.png in Resources */,
+				88774F491AF7B01500D8205D /* kid1.wav in Resources */,
 				88072C4D1AE10F9300F2B856 /* 8Monkey.png in Resources */,
 				88072C4A1AE10F9300F2B856 /* 5Monkey.png in Resources */,
 				88072BF81ADFDE8100F2B856 /* 3Gustavo.png in Resources */,
 				88563FB41AF75866001F1472 /* 3clock.png in Resources */,
 				887810AE1AF65E0D00946876 /* 2gus.png in Resources */,
 				88072C4B1AE10F9300F2B856 /* 6Monkey.png in Resources */,
+				88774F551AF7B01500D8205D /* yum2.wav in Resources */,
 				88A521531AF11CD200C6244F /* 8mattBaguette.wav in Resources */,
 				887810B61AF65E0D00946876 /* 9boy.png in Resources */,
 				8872DF2B1AE2E4770098BA3B /* GustavoHome.png in Resources */,
+				88774F411AF7B01500D8205D /* bus.wav in Resources */,
 				88072C4C1AE10F9300F2B856 /* 7Monkey.png in Resources */,
 				8893919C1AE6C52300613293 /* SSanimating.png in Resources */,
 				881E2F751AE8FEE6002B19DC /* 2DV.wav in Resources */,
 				887810BA1AF65E0D00946876 /* 9gus.png in Resources */,
 				88072BFC1ADFDE8100F2B856 /* 7Gustavo.png in Resources */,
 				88A5215F1AF11CD200C6244F /* mattIntro.wav in Resources */,
+				88774F511AF7B01500D8205D /* yawn2.wav in Resources */,
+				88774F481AF7B01500D8205D /* horn.wav in Resources */,
+				88774F4D1AF7B01500D8205D /* ohMan2.wav in Resources */,
 				887810AF1AF65E0D00946876 /* 4gus.png in Resources */,
 				88072C571AE10F9300F2B856 /* 13.3Monkey.png in Resources */,
 				88072C001ADFDE8100F2B856 /* 11Gustavo.png in Resources */,
 				88072C601AE10F9300F2B856 /* 16Monkey.png in Resources */,
 				88A521421AF11CD200C6244F /* 1matt.wav in Resources */,
+				88774F4F1AF7B01500D8205D /* train.wav in Resources */,
 				881E2F7D1AE93905002B19DC /* YourDecisions.png in Resources */,
 				88563FB51AF75866001F1472 /* alarm.png in Resources */,
 				887810B81AF65E0D00946876 /* 9boy3.png in Resources */,
 				88A521411AF11CD200C6244F /* 1gustavo.wav in Resources */,
+				88774F4A1AF7B01500D8205D /* kid2.wav in Resources */,
+				88774F401AF7B01500D8205D /* boat.wav in Resources */,
 				88072BDC1ADFDE6F00F2B856 /* chocolate.png in Resources */,
 				88A5214B1AF11CD200C6244F /* 5gustavo.wav in Resources */,
 				88A521431AF11CD200C6244F /* 2gustavo.wav in Resources */,
-				884913391AF365E900673D33 /* horn.wav in Resources */,
 				88A521541AF11CD200C6244F /* 8mattCroissant.wav in Resources */,
 				88A5215D1AF11CD200C6244F /* 13MattBed.wav in Resources */,
 				887810C11AF65E0D00946876 /* winBoat2.png in Resources */,
@@ -916,17 +1003,17 @@
 				88072BA11ADFDE0100F2B856 /* scrollingBg1.png in Resources */,
 				881E2F7C1AE93905002B19DC /* clickAny.png in Resources */,
 				88072C5A1AE10F9300F2B856 /* 14.1Monkey.png in Resources */,
+				88774F421AF7B01500D8205D /* camera.wav in Resources */,
 				88072C4E1AE10F9300F2B856 /* 9Monkey.png in Resources */,
 				88072C5B1AE10F9300F2B856 /* 14.2Monkey.png in Resources */,
+				88774F4E1AF7B01500D8205D /* sarah.wav in Resources */,
 				88A521511AF11CD200C6244F /* 7matt.wav in Resources */,
 				887810BD1AF65E0D00946876 /* sarah.png in Resources */,
-				884913361AF3609100673D33 /* bus.wav in Resources */,
 				8872DF2F1AE2E4890098BA3B /* MonkeyHome.png in Resources */,
 				8872DF2C1AE2E4770098BA3B /* GustavoRetry.png in Resources */,
 				88072BDF1ADFDE6F00F2B856 /* eiffel.png in Resources */,
 				88AE43F01AC165F6005D2940 /* Images.xcassets in Resources */,
 				887810B01AF65E0D00946876 /* 5gus.png in Resources */,
-				8849133A1AF365E900673D33 /* train.wav in Resources */,
 				88A521481AF11CD200C6244F /* 3matt.wav in Resources */,
 				88072C531AE10F9300F2B856 /* 12.3Monkey.png in Resources */,
 				88563FB91AF75866001F1472 /* circus.png in Resources */,
@@ -937,29 +1024,38 @@
 				88A521441AF11CD200C6244F /* 2matt.wav in Resources */,
 				88072C471AE10F9300F2B856 /* 2Monkey.png in Resources */,
 				88072C491AE10F9300F2B856 /* 4Monkey.png in Resources */,
+				88774F461AF7B01500D8205D /* gustavo.wav in Resources */,
 				88072BFB1ADFDE8100F2B856 /* 6Gustavo.png in Resources */,
+				88774F3F1AF7B01500D8205D /* birds.wav in Resources */,
 				88A5214C1AF11CD200C6244F /* 5mattColloseum.wav in Resources */,
 				88072C041ADFDE8100F2B856 /* bridge.png in Resources */,
 				88072C071ADFDE8100F2B856 /* taxi.png in Resources */,
 				88A5214F1AF11CD200C6244F /* 6matt.wav in Resources */,
+				88774F441AF7B01500D8205D /* circus.wav in Resources */,
 				88072C641AE10FB900F2B856 /* 11Monkey.png in Resources */,
 				88072BA21ADFDE0100F2B856 /* scrollingBg2.png in Resources */,
+				88774F4C1AF7B01500D8205D /* ohMan.wav in Resources */,
 				88072BF91ADFDE8100F2B856 /* 4Gustavo.png in Resources */,
+				88774F471AF7B01500D8205D /* hiGustavo.wav in Resources */,
 				88A5215A1AF11CD200C6244F /* 11mattSauce.wav in Resources */,
 				88072B9E1ADFDE0100F2B856 /* GustavoBook.png in Resources */,
 				88072C011ADFDE8100F2B856 /* 12Gustavo.png in Resources */,
 				88A521461AF11CD200C6244F /* 3gustavoTaxi.wav in Resources */,
 				887810981AF65DE500946876 /* boat1.png in Resources */,
+				88774F541AF7B01500D8205D /* yum.wav in Resources */,
 				88A521561AF11CD200C6244F /* 9mattItalyFood.wav in Resources */,
 				88072B9C1ADFDE0100F2B856 /* appCloud1.png in Resources */,
+				88774F431AF7B01500D8205D /* churchBells.wav in Resources */,
 				887810C01AF65E0D00946876 /* winBoat1.png in Resources */,
 				887810BF1AF65E0D00946876 /* underGus.png in Resources */,
 				88A521521AF11CD200C6244F /* 8gustavo.wav in Resources */,
 				88A521551AF11CD200C6244F /* 9gustavo.wav in Resources */,
+				88774F521AF7B01500D8205D /* yay.wav in Resources */,
 				88072BF61ADFDE8100F2B856 /* 1Gustavo.png in Resources */,
 				8856D37D1AAB8EAF00D92C79 /* Main.storyboard in Resources */,
 				88072B9F1ADFDE0100F2B856 /* MonkeyBook.png in Resources */,
 				8893919A1AE6C52300613293 /* 1SplashScreen.png in Resources */,
+				88774F3E1AF7B01500D8205D /* bell.wav in Resources */,
 				8893919B1AE6C52300613293 /* animatingPlane.png in Resources */,
 				88A521581AF11CD200C6244F /* 10mattPizza.wav in Resources */,
 				88072C511AE10F9300F2B856 /* 12.1Monkey.png in Resources */,

@@ -58,16 +58,16 @@ class Monkey3I: SKScene {
         var node = self.nodeAtPoint(location)
     
         if (node.name == "3clock") {
-            sfx("train.wav")
+            sfx("clockTower.wav")
     
     
         }   else if (node.name == "") {
             sfx("")
     
     
+        }
+    
     }
-    
-    
     
 }
 

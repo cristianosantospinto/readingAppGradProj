@@ -58,7 +58,7 @@ class Monkey9Fc: SKScene {
         var node = self.nodeAtPoint(location)
         
         if (node.name == "mattFace") {
-            sfx("train.wav")
+            sfx("yum.wav")
             
             
         }   else if (node.name == "") {

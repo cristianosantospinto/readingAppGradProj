@@ -62,12 +62,11 @@ class Monkey5I: SKScene {
         var node = self.nodeAtPoint(location)
         
         if (node.name == "church") {
-            sfx("train.wav")
+            sfx("churchBells.wav")
             
             
         }   else if (node.name == "circus") {
-            sfx("")
-            
+            sfx("circus.wav")
             
         }
         

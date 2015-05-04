@@ -56,8 +56,8 @@ class Gustavo6: SKScene {
         var location = touch!.locationInNode(self)
         var node = self.nodeAtPoint(location)
         
-        if (node.name == "2gus") {
-            sfx("train.wav")
+        if (node.name == "6gus") {
+            sfx("gustavo.wav")
             
             
         }   else if (node.name == "") {
@@ -66,7 +66,7 @@ class Gustavo6: SKScene {
             
         }
     
-    
+    }
     
 }
 
