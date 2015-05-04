@@ -26,6 +26,15 @@ class Monkey5I: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let church = SKSpriteNode(imageNamed: "church")
+        church.position = CGPoint(x: size.width/2 - 220, y: size.height/2 + 280)
+        church.name = "church"
+        addChild(church)
+        
+        let circus = SKSpriteNode(imageNamed: "circus")
+        circus.position = CGPoint(x: size.width/2 + 160, y: size.height/2 - 220)
+        circus.name = "circus"
+        addChild(circus)
         
     }
     
@@ -47,6 +56,23 @@ class Monkey5I: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "church") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "circus") {
+            sfx("")
+            
+            
+        }
+        
+        
+    }
     
 }
 

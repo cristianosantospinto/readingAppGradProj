@@ -26,6 +26,16 @@ class Gustavo12: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let sarah = SKSpriteNode(imageNamed: "sarah")
+        sarah.position = CGPoint(x: size.width/2 - 760, y: size.height/2 + 80)
+        sarah.name = "sarah"
+        addChild(sarah)
+        
+        let gustavo = SKSpriteNode(imageNamed: "underGus")
+        gustavo.position = CGPoint(x: size.width/2 - 750, y: size.height/2 - 290)
+        gustavo.name = "underGus"
+        addChild(gustavo)
+        
         
     }
     
@@ -40,13 +50,28 @@ class Gustavo12: SKScene {
     
     func swipedLeft(sender:UISwipeGestureRecognizer){
         
-        let Scene = Gustavo11(size:self.size)
+        let Scene = Gustavo7(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     
-    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "2gus") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "") {
+            sfx("")
+            
+            
+        }
+        
+    }
     
 }

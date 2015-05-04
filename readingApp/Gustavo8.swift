@@ -26,7 +26,25 @@ class Gustavo8: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let gustavo = SKSpriteNode(imageNamed: "8gus")
+        gustavo.position = CGPoint(x: size.width/2 - 470, y: size.height/2 - 330)
+        gustavo.name = "8gus"
+        addChild(gustavo)
         
+        let boy1 = SKSpriteNode(imageNamed: "8boy1")
+        boy1.position = CGPoint(x: size.width/2 + 700, y: size.height/2 - 70)
+        boy1.name = "8boy1"
+        addChild(boy1)
+        
+        let boy2 = SKSpriteNode(imageNamed: "8boy2")
+        boy2.position = CGPoint(x: size.width/2 - 345, y: size.height/2 + 70)
+        boy2.name = "8boy2"
+        addChild(boy2)
+        
+        let boy3 = SKSpriteNode(imageNamed: "8boy3")
+        boy3.position = CGPoint(x: size.width/2 + 100, y: size.height/2 + 170)
+        boy3.name = "8boy3"
+        addChild(boy3)
     }
     
     func swipedRight(sender:UISwipeGestureRecognizer){
@@ -46,6 +64,21 @@ class Gustavo8: SKScene {
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "2gus") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "") {
+            sfx("")
+            
+            
+        }
     
     
     

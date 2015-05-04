@@ -26,6 +26,31 @@ class Gustavo9: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let gustavo = SKSpriteNode(imageNamed: "9gus")
+        gustavo.position = CGPoint(x: size.width/2 + 770, y: size.height/2 - 270)
+        gustavo.name = "9gus"
+        addChild(gustavo)
+        
+        let george = SKSpriteNode(imageNamed: "9george")
+        george.position = CGPoint(x: size.width/2 - 530, y: size.height/2 + 70)
+        george.name = "8george"
+        addChild(george)
+        
+        let boy1 = SKSpriteNode(imageNamed: "9boy")
+        boy1.position = CGPoint(x: size.width/2 + 340, y: size.height/2 + 50)
+        boy1.name = "8boy1"
+        addChild(boy1)
+        
+        let boy2 = SKSpriteNode(imageNamed: "9boy2")
+        boy2.position = CGPoint(x: size.width/2 + 10, y: size.height/2 + 270)
+        boy2.name = "9boy2"
+        addChild(boy2)
+        
+        let boy3 = SKSpriteNode(imageNamed: "9boy3")
+        boy3.position = CGPoint(x: size.width/2 + 650, y: size.height/2 + 330)
+        boy3.name = "9boy3"
+        addChild(boy3)
+
         
     }
     
@@ -44,6 +69,21 @@ class Gustavo9: SKScene {
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         self.view?.presentScene(Scene, transition: reveal)
     }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "2gus") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "") {
+            sfx("")
+            
+            
+        }
     
     
     

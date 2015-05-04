@@ -33,6 +33,15 @@ class Gustavo3: SKScene {
         buttonBus.name = "bus"
         addChild(buttonBus)
         
+        let rotateR = SKAction.rotateByAngle(0.05, duration: 1)
+        let rotateL = SKAction.rotateByAngle(-0.05, duration: 1)
+        let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+        let wiggle = SKAction.repeatActionForever(cycle)
+        buttonTrain.runAction(wiggle)
+        buttonTaxi.runAction(wiggle)
+        buttonBus.runAction(wiggle)
+        
+        
         let swipedRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
         //swipeRight.direction = .Right
         view.addGestureRecognizer(swipedRight)
@@ -42,7 +51,6 @@ class Gustavo3: SKScene {
     
     
     func swipedRight(sender:UISwipeGestureRecognizer){
-        
         let Scene = Gustavo2(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
@@ -57,23 +65,26 @@ class Gustavo3: SKScene {
         var node = self.nodeAtPoint(location)
         
         if (node.name == "train") {
+            sfx("train.wav")
             var mainMenu = Gustavo4(size: self.size)
-            var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
+            var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 2.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
             backgroundMusicPlayer.stop()
             self.scene!.view?.presentScene(mainMenu, transition: transition)
     
         
         }   else if (node.name == "taxi") {
+            sfx("horn.wav")
                 var mainMenu = Gustavo6(size: self.size)
-                var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
+                var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 2.0)
                 mainMenu.scaleMode = SKSceneScaleMode.AspectFill
                 backgroundMusicPlayer.stop()
                 self.scene!.view?.presentScene(mainMenu, transition: transition)
             
         }   else if (node.name == "bus") {
+            sfx("bus.wav")
             var mainMenu = Gustavo5(size: self.size)
-            var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
+            var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 2.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
             backgroundMusicPlayer.stop()
             self.scene!.view?.presentScene(mainMenu, transition: transition)

@@ -26,6 +26,16 @@ class Monkey12I: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let yawn = SKSpriteNode(imageNamed: "yawn")
+        yawn.position = CGPoint(x: size.width/2 - 270, y: size.height/2 + 180)
+        yawn.name = "yawn"
+        addChild(yawn)
+        
+        let alarm = SKSpriteNode(imageNamed: "alarm")
+        alarm.position = CGPoint(x: size.width/2 - 790, y: size.height/2 + 40)
+        alarm.name = "alarm"
+        addChild(alarm)
+        
         
     }
     
@@ -45,6 +55,24 @@ class Monkey12I: SKScene {
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "yawn") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "alarm") {
+            sfx("")
+            
+            
+        }
+        
+        
     }
     
     

@@ -34,6 +34,13 @@ class Monkey13F: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let rotateR = SKAction.rotateByAngle(0.1, duration: 1)
+        let rotateL = SKAction.rotateByAngle(-0.1, duration: 1)
+        let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+        let wiggle = SKAction.repeatActionForever(cycle)
+        MonkeyHome.runAction(wiggle)
+        MonkeyRetry.runAction(wiggle)
+        
         
     }
     func swipedLeft(sender:UISwipeGestureRecognizer){

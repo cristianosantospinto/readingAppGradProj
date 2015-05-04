@@ -12,7 +12,7 @@ class Monkey8I: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("9mattFood.wav")
+        playBackgroundMusic("9mattItalyFood.wav")
         
         let background = SKSpriteNode(imageNamed: "10Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
@@ -28,6 +28,12 @@ class Monkey8I: SKScene {
         pizza.name = "pizza"
         addChild(pizza)
         
+        let rotateR = SKAction.rotateByAngle(0.06, duration: 1)
+        let rotateL = SKAction.rotateByAngle(-0.06, duration: 1)
+        let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+        let wiggle = SKAction.repeatActionForever(cycle)
+        spaghetti.runAction(wiggle)
+        pizza.runAction(wiggle)
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))

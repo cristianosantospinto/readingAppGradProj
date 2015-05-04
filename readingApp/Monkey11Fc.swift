@@ -2,7 +2,7 @@
 //  Monkey11Fc.swift
 //  readingApp
 //
-//  Created by Cristiano Santos-Pinto on 18/04/2015.
+//  Created by Cristiano Santos-Pinto on 30/04/2015.
 //  Copyright (c) 2015 Cristiano Santos-Pinto. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ class Monkey11Fc: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("12mattChocolate.wav")
+        playBackgroundMusic("12MattChocolate.wav")
         
         let background = SKSpriteNode(imageNamed: "14.1Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
@@ -25,6 +25,11 @@ class Monkey11Fc: SKScene {
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
+        
+        let matt = SKSpriteNode(imageNamed: "mattFace")
+        matt.position = CGPoint(x: size.width/2 - 350, y: size.height/2 + 302)
+        matt.name = "mattFace"
+        addChild(matt)
         
         
     }
@@ -45,6 +50,24 @@ class Monkey11Fc: SKScene {
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "mattFace") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "") {
+            sfx("")
+            
+            
+        }
+        
+        
     }
     
     

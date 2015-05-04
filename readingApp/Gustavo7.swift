@@ -27,6 +27,13 @@ class Gustavo7: SKScene {
         bridge.position = CGPoint(x: size.width/2 + 300, y: size.height/2 + 50)
         bridge.name = "bridge"
         addChild(bridge)
+        
+        let rotateR = SKAction.rotateByAngle(0.1, duration: 1)
+        let rotateL = SKAction.rotateByAngle(-0.1, duration: 1)
+        let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+        let wiggle = SKAction.repeatActionForever(cycle)
+        park.runAction(wiggle)
+        bridge.runAction(wiggle)
 
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
@@ -68,6 +75,8 @@ override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.scene!.view?.presentScene(mainMenu, transition: transition)
         
     }
+    
+    
     
     
 }

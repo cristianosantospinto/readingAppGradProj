@@ -26,6 +26,11 @@ class Monkey9Fc: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let matt = SKSpriteNode(imageNamed: "mattFace")
+        matt.position = CGPoint(x: size.width/2 - 350, y: size.height/2 + 310)
+        matt.name = "mattFace"
+        addChild(matt)
+        
         
     }
     
@@ -47,6 +52,23 @@ class Monkey9Fc: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "mattFace") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "") {
+            sfx("")
+            
+            
+        }
+        
+        
+    }
     
 }
 

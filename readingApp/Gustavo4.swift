@@ -26,6 +26,11 @@ class Gustavo4: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let gustavo = SKSpriteNode(imageNamed: "4gus")
+        gustavo.position = CGPoint(x: size.width/2 - 50, y: size.height/2 - 320)
+        gustavo.name = "4gus"
+        addChild(gustavo)
+        
         
     }
     
@@ -47,7 +52,19 @@ class Gustavo4: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "4gus") {
+            sfx("train.wav")
+  
+            
+            
+        }
     
     
-}
+    }
 
+}

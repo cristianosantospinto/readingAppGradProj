@@ -28,6 +28,13 @@ class Monkey13I: SKScene {
         MonkeyRetry.name = "MonkeyRetry"
         addChild(MonkeyRetry)
         
+        let rotateR = SKAction.rotateByAngle(0.1, duration: 1)
+        let rotateL = SKAction.rotateByAngle(-0.1, duration: 1)
+        let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+        let wiggle = SKAction.repeatActionForever(cycle)
+        MonkeyHome.runAction(wiggle)
+        MonkeyRetry.runAction(wiggle)
+        
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))

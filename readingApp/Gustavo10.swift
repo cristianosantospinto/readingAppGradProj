@@ -23,6 +23,22 @@ class Gustavo10: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let boat1 = SKSpriteNode(imageNamed: "boat1")
+        boat1.position = CGPoint(x: size.width/2 - 100, y: size.height/2 + 300)
+        boat1.name = "boat1"
+        addChild(boat1)
+        
+        let boat2 = SKSpriteNode(imageNamed: "boat2")
+        boat2.position = CGPoint(x: size.width/2 + 200, y: size.height/2 - 150)
+        boat2.name = "boat2"
+        addChild(boat2)
+        
+        let rotateR = SKAction.rotateByAngle(0.03, duration: 1)
+        let rotateL = SKAction.rotateByAngle(-0.03, duration: 1)
+        let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+        let wiggle = SKAction.repeatActionForever(cycle)
+        boat1.runAction(wiggle)
+        boat2.runAction(wiggle)
         
     }
     
@@ -36,17 +52,29 @@ class Gustavo10: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
-    func sceneTapped() {
-        let myScene = Gustavo11(size:self.size)
-        myScene.scaleMode = scaleMode
-        let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
-        backgroundMusicPlayer.stop()
-        self.view?.presentScene(myScene, transition: reveal)
-    }
-    
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        sceneTapped()
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "boat1") {
+            sfx("train.wav")
+            var mainMenu = Gustavo11(size: self.size)
+            var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 2.0)
+            mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+            backgroundMusicPlayer.stop()
+            self.scene!.view?.presentScene(mainMenu, transition: transition)
+            
+            
+        }   else if (node.name == "boat2") {
+            sfx("horn.wav")
+            var mainMenu = Gustavo11(size: self.size)
+            var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 2.0)
+            mainMenu.scaleMode = SKSceneScaleMode.AspectFill
+            backgroundMusicPlayer.stop()
+            self.scene!.view?.presentScene(mainMenu, transition: transition)
+        }
+        
     }
-    
-}
 
+}

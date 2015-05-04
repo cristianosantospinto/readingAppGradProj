@@ -26,6 +26,16 @@ class Monkey7F: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let birds = SKSpriteNode(imageNamed: "birds")
+        birds.position = CGPoint(x: size.width/2 + 700, y: size.height/2 + 300)
+        birds.name = "birds"
+        addChild(birds)
+        
+        let camera = SKSpriteNode(imageNamed: "cam")
+        camera.position = CGPoint(x: size.width/2 + 23, y: size.height/2 - 300)
+        camera.name = "cam"
+        addChild(camera)
+        
         
     }
     
@@ -47,6 +57,23 @@ class Monkey7F: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "birds") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "cam") {
+            sfx("")
+            
+            
+        }
+        
+        
+    }
     
 }
 

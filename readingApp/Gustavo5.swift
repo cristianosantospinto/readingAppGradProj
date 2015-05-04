@@ -26,6 +26,17 @@ class Gustavo5: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let gustavo = SKSpriteNode(imageNamed: "5gus")
+        gustavo.position = CGPoint(x: size.width/2 - 50, y: size.height/2 - 300)
+        gustavo.name = "5gus"
+        addChild(gustavo)
+        
+        let stop = SKSpriteNode(imageNamed: "stop")
+        stop.position = CGPoint(x: size.width/2 - 640, y: size.height/2 + 150)
+        stop.name = "stop"
+        addChild(stop)
+       
+        
         
     }
     
@@ -47,7 +58,25 @@ class Gustavo5: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
     
-    
-}
+        if (node.name == "5gus") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "") {
+            sfx("")
+            
 
+ 
+
+    
+    
+    
+        }
+
+    }
+}

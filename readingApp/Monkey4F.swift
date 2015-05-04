@@ -46,9 +46,6 @@ class Monkey4F: SKScene {
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     
-    
     }
-
-
-
+    
 }

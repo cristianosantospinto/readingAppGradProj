@@ -27,6 +27,13 @@ class Monkey10F: SKScene {
         chocolate.name = "chocolate"
         addChild(chocolate)
         
+        let rotateR = SKAction.rotateByAngle(0.05, duration: 1)
+        let rotateL = SKAction.rotateByAngle(-0.05, duration: 1)
+        let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+        let wiggle = SKAction.repeatActionForever(cycle)
+        strawberry.runAction(wiggle)
+        chocolate.runAction(wiggle)
+        
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))

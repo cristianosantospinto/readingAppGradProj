@@ -28,6 +28,13 @@ class Gustavo14: SKScene {
         GustavoRetry.name = "GustavoRetry"
         addChild(GustavoRetry)
         
+        let rotateR = SKAction.rotateByAngle(0.1, duration: 1)
+        let rotateL = SKAction.rotateByAngle(-0.1, duration: 1)
+        let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+        let wiggle = SKAction.repeatActionForever(cycle)
+        GustavoHome.runAction(wiggle)
+        GustavoRetry.runAction(wiggle)
+        
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))

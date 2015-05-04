@@ -26,6 +26,16 @@ class Gustavo11: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let boat1 = SKSpriteNode(imageNamed: "winBoat1")
+        boat1.position = CGPoint(x: size.width/2 - 353, y: size.height/2 + 158)
+        boat1.name = "winBoat1"
+        addChild(boat1)
+        
+        let boat2 = SKSpriteNode(imageNamed: "winBoat2")
+        boat2.position = CGPoint(x: size.width/2 + 277, y: size.height/2 + 165)
+        boat2.name = "winBoat2"
+        addChild(boat2)
+        
         
     }
     
@@ -46,6 +56,21 @@ class Gustavo11: SKScene {
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "2gus") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "") {
+            sfx("")
+            
+            
+        }
     
     
     

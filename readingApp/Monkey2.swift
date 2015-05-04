@@ -28,6 +28,12 @@ class Monkey2: SKScene {
         italy.name = "colloseum"
         addChild(italy)
         
+        let rotateR = SKAction.rotateByAngle(0.05, duration: 1)
+        let rotateL = SKAction.rotateByAngle(-0.05, duration: 1)
+        let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+        let wiggle = SKAction.repeatActionForever(cycle)
+        italy.runAction(wiggle)
+        france.runAction(wiggle)
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))

@@ -26,6 +26,10 @@ class Monkey3F: SKScene {
         swipeRight.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
+        let church = SKSpriteNode(imageNamed: "3clock")
+        church.position = CGPoint(x: size.width/2 + 250, y: size.height/2 - 8)
+        church.name = "3clock"
+        addChild(church)
         
     }
     
@@ -46,6 +50,21 @@ class Monkey3F: SKScene {
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        var touch = touches.first as? UITouch
+        var location = touch!.locationInNode(self)
+        var node = self.nodeAtPoint(location)
+        
+        if (node.name == "3clock") {
+            sfx("train.wav")
+            
+            
+        }   else if (node.name == "") {
+            sfx("")
+            
+            
+        }
     
     
 }

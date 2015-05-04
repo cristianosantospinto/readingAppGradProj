@@ -26,6 +26,13 @@ class Monkey8F: SKScene {
         baguette.position = CGPoint(x: size.width/2 + 270, y: size.height/2 + 60)
         baguette.name = "baguette"
         addChild(baguette)
+        
+        let rotateR = SKAction.rotateByAngle(0.06, duration: 1)
+        let rotateL = SKAction.rotateByAngle(-0.06, duration: 1)
+        let cycle = SKAction.sequence([rotateR, rotateL, rotateL, rotateR])
+        let wiggle = SKAction.repeatActionForever(cycle)
+        croissant.runAction(wiggle)
+        baguette.runAction(wiggle)
                 
                 
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
@@ -42,7 +49,6 @@ class Monkey8F: SKScene {
                 let Scene = Monkey7F(size:self.size)
                 Scene.scaleMode = scaleMode
                 let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
-                backgroundMusicPlayer.stop()
                 self.view?.presentScene(Scene, transition: reveal)
             }
             
