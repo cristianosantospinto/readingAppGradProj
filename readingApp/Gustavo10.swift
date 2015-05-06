@@ -19,8 +19,11 @@ class Gustavo10: SKScene {
         addChild(background)
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+        swipeRight.direction = .Right
+        view.addGestureRecognizer(swipeRight)
+        
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
+        swipeLeft.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
         let boat1 = SKSpriteNode(imageNamed: "boat1")
@@ -43,13 +46,17 @@ class Gustavo10: SKScene {
     }
     
     
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Gustavo7(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
+    }
+    
+    func swipedLeft(sender:UISwipeGestureRecognizer){
+        println("swiped left")
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {

@@ -37,21 +37,28 @@ class Gustavo7: SKScene {
 
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+        swipeRight.direction = .Right
+        view.addGestureRecognizer(swipeRight)
+        
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
+        swipeLeft.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
         
     }
     
     
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Gustavo3(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
+    }
+    
+    func swipedLeft(sender:UISwipeGestureRecognizer){
+        println("swiped left")
     }
     
 

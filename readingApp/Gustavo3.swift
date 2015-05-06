@@ -42,9 +42,13 @@ class Gustavo3: SKScene {
         buttonBus.runAction(wiggle)
         
         
-        let swipedRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
-        //swipeRight.direction = .Right
-        view.addGestureRecognizer(swipedRight)
+        let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+        swipeRight.direction = .Right
+        view.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
+        swipeLeft.direction = .Left
+        view.addGestureRecognizer(swipeLeft)
         
         
     }
@@ -56,6 +60,10 @@ class Gustavo3: SKScene {
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
+    }
+    
+    func swipedLeft(sender:UISwipeGestureRecognizer){
+        println("swiped left")
     }
     
     

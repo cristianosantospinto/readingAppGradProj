@@ -23,7 +23,7 @@ class Monkey11Fs: SKScene {
         view.addGestureRecognizer(swipeRight)
         
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
+        swipeLeft.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
         let matt = SKSpriteNode(imageNamed: "mattFace")
@@ -34,7 +34,7 @@ class Monkey11Fs: SKScene {
         
     }
     
-    func swipedRight(sender:UISwipeGestureRecognizer){
+    func swipedLeft(sender:UISwipeGestureRecognizer){
         
         let Scene = Monkey12F(size:self.size)
         Scene.scaleMode = scaleMode
@@ -43,7 +43,7 @@ class Monkey11Fs: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Monkey8F(size:self.size)
         Scene.scaleMode = scaleMode

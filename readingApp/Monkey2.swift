@@ -10,6 +10,7 @@ import SpriteKit
 
 class Monkey2: SKScene {
     
+    
     override func didMoveToView(view: SKView) {
         
         playBackgroundMusic("1matt.wav")
@@ -36,21 +37,27 @@ class Monkey2: SKScene {
         france.runAction(wiggle)
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
-        let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
-        view.addGestureRecognizer(swipeLeft)
+        swipeRight.direction = .Right
+        view.addGestureRecognizer(swipeRight)
         
+        let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
+        swipeLeft.direction = .Left
+        view.addGestureRecognizer(swipeLeft)
         
     }
     
     
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Monkey1(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
+    }
+    
+    func swipedLeft(sender:UISwipeGestureRecognizer){
+        println("swiped left")
     }
     
     

@@ -23,7 +23,7 @@ class Monkey3F: SKScene {
         view.addGestureRecognizer(swipeRight)
         
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
+        swipeLeft.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
         let church = SKSpriteNode(imageNamed: "3clock")
@@ -35,18 +35,18 @@ class Monkey3F: SKScene {
     
     func swipedRight(sender:UISwipeGestureRecognizer){
         
-        let Scene = Monkey4F(size:self.size)
+        let Scene = Monkey2(size:self.size)
         Scene.scaleMode = scaleMode
-        let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
+        let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     
     func swipedLeft(sender:UISwipeGestureRecognizer){
         
-        let Scene = Monkey2(size:self.size)
+        let Scene = Monkey4F(size:self.size)
         Scene.scaleMode = scaleMode
-        let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
+        let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
         backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }

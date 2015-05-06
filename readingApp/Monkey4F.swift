@@ -23,13 +23,13 @@ class Monkey4F: SKScene {
         view.addGestureRecognizer(swipeRight)
         
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
+        swipeLeft.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
         
     }
     
-    func swipedRight(sender:UISwipeGestureRecognizer){
+    func swipedLeft(sender:UISwipeGestureRecognizer){
         
         let Scene = Monkey5F(size:self.size)
         Scene.scaleMode = scaleMode
@@ -38,7 +38,7 @@ class Monkey4F: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Monkey3F(size:self.size)
         Scene.scaleMode = scaleMode

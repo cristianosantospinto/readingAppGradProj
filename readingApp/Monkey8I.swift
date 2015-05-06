@@ -36,15 +36,18 @@ class Monkey8I: SKScene {
         pizza.runAction(wiggle)
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+        swipeRight.direction = .Right
+        view.addGestureRecognizer(swipeRight)
+        
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
+        swipeLeft.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
         
     }
     
     
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Monkey7I(size:self.size)
         Scene.scaleMode = scaleMode
@@ -52,6 +55,9 @@ class Monkey8I: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
+    func swipedLeft(sender:UISwipeGestureRecognizer){
+        println("swiped left")
+    }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         var touch = touches.first as? UITouch

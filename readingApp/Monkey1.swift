@@ -24,6 +24,23 @@ class Monkey1: SKScene {
         addChild(background)
         
         
+        let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+        swipeRight.direction = .Right
+        view.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
+        swipeLeft.direction = .Left
+        view.addGestureRecognizer(swipeLeft)
+        
+        
+    }
+    
+    func swipedRight(sender:UISwipeGestureRecognizer){
+        println("swiped right")
+    }
+    
+    func swipedLeft(sender:UISwipeGestureRecognizer){
+        println("swiped left")
     }
     
     func sceneFade() {

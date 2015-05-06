@@ -30,11 +30,11 @@ class Monkey3I: SKScene {
         church.position = CGPoint(x: size.width/2 + 250, y: size.height/2 - 8)
         church.name = "3clock"
         addChild(church)
-        
+    
         
     }
     
-    func swipedRight(sender:UISwipeGestureRecognizer){
+    func swipedLeft(sender:UISwipeGestureRecognizer){
         
         let Scene = Monkey4I(size:self.size)
         Scene.scaleMode = scaleMode
@@ -43,7 +43,7 @@ class Monkey3I: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Monkey2(size:self.size)
         Scene.scaleMode = scaleMode

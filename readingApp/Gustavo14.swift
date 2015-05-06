@@ -37,13 +37,16 @@ class Gustavo14: SKScene {
         
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+        swipeRight.direction = .Right
+        view.addGestureRecognizer(swipeRight)
+        
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
+        swipeLeft.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
         
     }
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Gustavo13(size:self.size)
         Scene.scaleMode = scaleMode
@@ -52,6 +55,9 @@ class Gustavo14: SKScene {
         backgroundMusicPlayer.stop()
     }
     
+    func swipedLeft(sender:UISwipeGestureRecognizer){
+        println("swiped left")
+    }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         var touch = touches.first as? UITouch

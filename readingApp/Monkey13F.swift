@@ -30,8 +30,11 @@ class Monkey13F: SKScene {
         
         
         let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+        swipeRight.direction = .Right
+        view.addGestureRecognizer(swipeRight)
+        
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
+        swipeLeft.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
         let rotateR = SKAction.rotateByAngle(0.1, duration: 1)
@@ -43,13 +46,17 @@ class Monkey13F: SKScene {
         
         
     }
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Monkey12F(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
         self.view?.presentScene(Scene, transition: reveal)
         backgroundMusicPlayer.stop()
+    }
+    
+    func swipedLeft(sender:UISwipeGestureRecognizer){
+        println("swiped left")
     }
     
     

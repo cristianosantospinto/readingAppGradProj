@@ -23,7 +23,7 @@ class Gustavo5: SKScene {
         view.addGestureRecognizer(swipeRight)
         
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
+        swipeLeft.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
         let gustavo = SKSpriteNode(imageNamed: "5gus")
@@ -40,7 +40,7 @@ class Gustavo5: SKScene {
         
     }
     
-    func swipedRight(sender:UISwipeGestureRecognizer){
+    func swipedLeft(sender:UISwipeGestureRecognizer){
         
         let Scene = Gustavo7(size:self.size)
         Scene.scaleMode = scaleMode
@@ -49,7 +49,7 @@ class Gustavo5: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Gustavo3(size:self.size)
         Scene.scaleMode = scaleMode

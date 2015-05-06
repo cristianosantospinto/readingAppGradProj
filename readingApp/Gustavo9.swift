@@ -14,7 +14,7 @@ class Gustavo9: SKScene {
         
         playBackgroundMusic("6gustavo.wav")
         
-        let background = SKSpriteNode(imageNamed: "9Gustavo")
+        let background = SKSpriteNode(imageNamed: "9gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
         
@@ -23,7 +23,7 @@ class Gustavo9: SKScene {
         view.addGestureRecognizer(swipeRight)
         
         let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
-        swipeRight.direction = .Left
+        swipeLeft.direction = .Left
         view.addGestureRecognizer(swipeLeft)
         
         let gustavo = SKSpriteNode(imageNamed: "9gus")
@@ -54,7 +54,7 @@ class Gustavo9: SKScene {
         
     }
     
-    func swipedRight(sender:UISwipeGestureRecognizer){
+    func swipedLeft(sender:UISwipeGestureRecognizer){
         
         let Scene = Gustavo12(size:self.size)
         Scene.scaleMode = scaleMode
@@ -62,7 +62,7 @@ class Gustavo9: SKScene {
         self.view?.presentScene(Scene, transition: reveal)
     }
     
-    func swipedLeft(sender:UISwipeGestureRecognizer){
+    func swipedRight(sender:UISwipeGestureRecognizer){
         
         let Scene = Gustavo8(size:self.size)
         Scene.scaleMode = scaleMode
