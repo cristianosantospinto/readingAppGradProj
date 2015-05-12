@@ -17,7 +17,7 @@ class Monkey1: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("mattIntro.wav")
+        playBackgroundMusic("mattIntro.mp3")
         
         let background = SKSpriteNode(imageNamed: "1Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
@@ -52,8 +52,7 @@ class Monkey1: SKScene {
         
         startTime = currentTime
     }
-    
-    //override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+
     
     
     

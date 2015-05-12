@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Cristiano Santos-Pinto. All rights reserved.
 //
 
-import Foundation
 import AVFoundation
 
 var sfx: AVAudioPlayer!

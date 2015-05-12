@@ -11,17 +11,20 @@ import SpriteKit
 
 class Gustavo1: SKScene {
     
-    
-    
     var currentTime = 0.0
     var startTime = 0.0
     var elapsedTime = 0.0
     //var username = String?()
-
+    
+  //  let gustavoS = SKAction.playSoundFileNamed("gustavoIntro.mp3", waitForCompletion: false)
+  //  let silence = SKAction.playSoundFileNamed("silence.mp3", waitForCompletion: false)
     
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("gustavoIntro.wav")
+         playBackgroundMusic("gustavoIntro.mp3")
+   
+     //  runAction(gustavoS)
+        
         let background = SKSpriteNode(imageNamed: "1Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -43,6 +46,7 @@ class Gustavo1: SKScene {
             
             println(username!)
             
+        
          
             
         }*/
@@ -66,14 +70,13 @@ class Gustavo1: SKScene {
         println("swiped left")
     }
 
-
+ 
 func sceneFade() {
     let scene = Gustavo2(size:self.size)
     scene.scaleMode = scaleMode
     let reveal = SKTransition.fadeWithDuration(3.0)
     backgroundMusicPlayer.stop()
     self.view?.presentScene(scene, transition: reveal)
-    
     startTime = currentTime
 }
 

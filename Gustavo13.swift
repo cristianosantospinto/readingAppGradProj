@@ -12,7 +12,7 @@ class Gustavo13: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("10gustavo.wav")
+        playBackgroundMusic("10gustavo.mp3")
         
         let background = SKSpriteNode(imageNamed: "13Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
@@ -27,7 +27,7 @@ class Gustavo13: SKScene {
         view.addGestureRecognizer(swipeLeft)
         
         let gustavo = SKSpriteNode(imageNamed: "13")
-        gustavo.position = CGPoint(x: size.width/2 - 520, y: size.height/2 - 133)
+        gustavo.position = CGPoint(x: size.width/2 - 870, y: size.height/2 + 30)
         gustavo.name = "13"
         addChild(gustavo)
         
@@ -58,7 +58,7 @@ class Gustavo13: SKScene {
         var node = self.nodeAtPoint(location)
         
         if (node.name == "13") {
-            sfx("hiGustavo.wav")
+            sfx("hiGustavo.mp3")
             
             
         }   else if (node.name == "") {

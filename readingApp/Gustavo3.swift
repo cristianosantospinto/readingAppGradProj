@@ -9,10 +9,11 @@
 import SpriteKit
 
 class Gustavo3: SKScene {
+
     
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("2gustavo.wav")
+        playBackgroundMusic("2gustavo.mp3")
         
         let background = SKSpriteNode(imageNamed: "3Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
@@ -73,7 +74,7 @@ class Gustavo3: SKScene {
         var node = self.nodeAtPoint(location)
         
         if (node.name == "train") {
-            sfx("train.wav")
+          sfx("train.mp3")
             var mainMenu = Gustavo4(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 2.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill
@@ -82,7 +83,7 @@ class Gustavo3: SKScene {
     
         
         }   else if (node.name == "taxi") {
-            sfx("horn.wav")
+               sfx("horn.mp3")
                 var mainMenu = Gustavo6(size: self.size)
                 var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 2.0)
                 mainMenu.scaleMode = SKSceneScaleMode.AspectFill
@@ -90,7 +91,7 @@ class Gustavo3: SKScene {
                 self.scene!.view?.presentScene(mainMenu, transition: transition)
             
         }   else if (node.name == "bus") {
-            sfx("bus.wav")
+            sfx("bus.mp3")
             var mainMenu = Gustavo5(size: self.size)
             var transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 2.0)
             mainMenu.scaleMode = SKSceneScaleMode.AspectFill

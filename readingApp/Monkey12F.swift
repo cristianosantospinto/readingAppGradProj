@@ -12,7 +12,7 @@ class Monkey12F: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("13MattBed.wav")
+        playBackgroundMusic("13MattBed.mp3")
         
         let background = SKSpriteNode(imageNamed: "15Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
@@ -63,11 +63,11 @@ class Monkey12F: SKScene {
         var node = self.nodeAtPoint(location)
         
         if (node.name == "yawn") {
-            sfx("yawn.wav")
+            sfx("yawn.mp3")
             
             
         }   else if (node.name == "alarm") {
-            sfx("alarm.wav")
+            sfx("alarm.mp3")
             
             
         }

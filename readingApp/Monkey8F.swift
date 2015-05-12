@@ -11,7 +11,7 @@ class Monkey8F: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("7matt.wav")
+        playBackgroundMusic("7matt.mp3")
         
         let background = SKSpriteNode(imageNamed: "11Monkey")
         background.position = CGPoint(x: size.width/2, y: size.height/2)

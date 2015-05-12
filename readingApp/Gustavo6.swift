@@ -12,7 +12,7 @@ class Gustavo6: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-         playBackgroundMusic("3gustavoTaxi.wav")
+       //  playBackgroundMusic("3gustavoTaxi.mp3")
         
         let background = SKSpriteNode(imageNamed: "6Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
@@ -38,7 +38,7 @@ class Gustavo6: SKScene {
         let Scene = Gustavo7(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
-        backgroundMusicPlayer.stop()
+      //  backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     
@@ -47,7 +47,7 @@ class Gustavo6: SKScene {
         let Scene = Gustavo3(size:self.size)
         Scene.scaleMode = scaleMode
         let reveal = SKTransition.revealWithDirection(SKTransitionDirection.Right, duration: 1.0)
-        backgroundMusicPlayer.stop()
+      //  backgroundMusicPlayer.stop()
         self.view?.presentScene(Scene, transition: reveal)
     }
     
@@ -57,11 +57,11 @@ class Gustavo6: SKScene {
         var node = self.nodeAtPoint(location)
         
         if (node.name == "6gus") {
-            sfx("gustavo.wav")
+           sfx("gustavo.mp3")
             
             
         }   else if (node.name == "") {
-            sfx("")
+           sfx("")
             
             
         }

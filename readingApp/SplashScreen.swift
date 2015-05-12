@@ -14,10 +14,11 @@ class SplashScreen: SKScene {
     var startTime = 0.0
     var elapsedTime = 0.0
     
-    
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("1DV.wav")
+     // SKTAudio.sharedInstance().
+        playBackgroundMusic("1DV.mp3")
+        
         let background = SKSpriteNode(imageNamed: "1SplashScreen")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
@@ -50,6 +51,7 @@ class SplashScreen: SKScene {
             duration: 5, delay: 8.5,
             usingSpringWithDamping: 0.2, initialSpringVelocity: 0)
         clickAny.runAction(moveClick)
+        
     }
     
     

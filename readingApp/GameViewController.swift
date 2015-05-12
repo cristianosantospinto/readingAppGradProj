@@ -16,7 +16,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         let scene = SplashScreen(size: CGSize(width: 2048, height: 1536))  //calls class mainMenu //size for universal
         let skView = self.view as! SKView
-        skView.showsFPS = false
+       // skView.showsFPS = false
         skView.showsNodeCount = false                //shows fps on scree - toggle true/false to display
         skView.ignoresSiblingOrder = true
         scene.scaleMode = .AspectFill  //aspect fill for universal size screen

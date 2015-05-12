@@ -9,7 +9,6 @@
 import SpriteKit
 
 class GameScene: SKScene {          //scene setup
-  
 
     let background1 = SKSpriteNode(imageNamed: "scrollingBg1") //scrolling background setup images
     let background2 = SKSpriteNode(imageNamed: "scrollingBg2")
@@ -19,7 +18,10 @@ class GameScene: SKScene {          //scene setup
     
 override func didMoveToView(view: SKView) {
     
-    playBackgroundMusic("2DV.wav")
+    
+   // SKTAudio.sharedInstance().
+    playBackgroundMusic("2DV.mp3")
+    
     background1.anchorPoint = CGPointZero                       //scrolling background positioning
     background1.position = CGPoint(x: 0,y: 0)
     //background1.zPosition = -15
@@ -30,6 +32,7 @@ override func didMoveToView(view: SKView) {
     //background2.zPosition = -15
     self.addChild(background2)
     
+ 
 
         /*let textFieldColor = UIColor(red: 130/255, green: 195/255, blue: 249/255, alpha: 1)
         textField.borderStyle = .RoundedRect
@@ -53,7 +56,18 @@ override func didMoveToView(view: SKView) {
         bookTwo.position = CGPoint(x: size.width/2 + 350, y: size.height/2)
         bookTwo.delegate = self
         addChild(bookTwo)
-
+    
+        let help =  BookObject(imageNamed: "helpButton", bookNamed: "help")
+        help.position = CGPoint(x: size.width/2 + 850, y: size.height/2 + 450)
+        help.delegate = self
+        self.addChild(help)
+    
+     //  let mute =  BookObject(imageNamed: "mute", bookNamed: "mute")
+    //   mute.position = CGPoint(x: size.width/2 + 720, y: size.height/2 + 450)
+    //   mute.delegate = self
+    //   self.addChild(mute)
+    
+    
                                                                               //books animation
     
         /*bookOne.physicsBody = SKPhysicsBody(rectangleOfSize: bookOne.size)
@@ -96,8 +110,30 @@ override func didMoveToView(view: SKView) {
         addChild(cloud2)
     
     
+    
+    let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
+    swipeRight.direction = .Right
+    view.addGestureRecognizer(swipeRight)
+    
+    let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
+    swipeLeft.direction = .Left
+    view.addGestureRecognizer(swipeLeft)
+    
+    
     }
-}
+    
+    func swipedRight(sender:UISwipeGestureRecognizer){
+        println("swiped right")
+    }
+    
+    func swipedLeft(sender:UISwipeGestureRecognizer){
+        println("swiped left")
+    }
+    
+    }
+
+
+
 
 
 extension GameScene: BookObjectDelegate {       //extend bookObject?            //good practice to put delegates at bottom
@@ -116,6 +152,7 @@ extension GameScene: BookObjectDelegate {       //extend bookObject?            
             let myScene = Gustavo1(size:self.size)
             myScene.scaleMode = scaleMode
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
+         //SKTAudio.sharedInstance().
             backgroundMusicPlayer.stop()
             self.view?.presentScene(myScene, transition: reveal)
             
@@ -127,6 +164,16 @@ extension GameScene: BookObjectDelegate {       //extend bookObject?            
             let reveal = SKTransition.doorsOpenHorizontalWithDuration(1.0) // SKTransition.fadeWithDuration(1.0),
             backgroundMusicPlayer.stop()
             self.view?.presentScene(myScene, transition: reveal)
+            
+        } else if (bookName == "help") {
+            let myScene = help(size:self.size)
+            myScene.scaleMode = scaleMode
+            let reveal = SKTransition.fadeWithDuration(0.1)
+            self.view?.presentScene(myScene, transition: reveal)
+            
+     //   } else if (bookName == "mute") {
+     //    SKTAudio.sharedInstance().backgroundMusicPlayer!.stop()
+
             
             
         }

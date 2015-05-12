@@ -12,7 +12,7 @@ class Gustavo4: SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        playBackgroundMusic("3gustavoTrain.wav")
+        playBackgroundMusic("3gustavoTrain.mp3")
         
         let background = SKSpriteNode(imageNamed: "4Gustavo")
         background.position = CGPoint(x: size.width/2, y: size.height/2)
@@ -58,7 +58,7 @@ class Gustavo4: SKScene {
         var node = self.nodeAtPoint(location)
         
         if (node.name == "4gus") {
-            sfx("gustavo.wav")
+          sfx("gustavo.mp3")
   
             
             
